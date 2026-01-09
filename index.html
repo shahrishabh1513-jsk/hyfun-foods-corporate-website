@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyFun Foods | Potatoes for the World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- Mobile Menu Button -->
+    <div class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Mobile Menu Content -->
+    <div class="mobile-menu-content" id="mobileMenuContent">
+        <div class="mobile-menu-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./assets/image/hyfun_logo.png" alt="HyFun Foods Logo" class="logo-image">
+                </a>
+            </div>
+            <button class="close-menu-btn" id="closeMenuBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                <li class="mobile-dropdown">
+                    <a href="about.html" class="mobile-nav-link">About Us <i class="fas fa-chevron-down"></i></a>
+                    <div class="mobile-dropdown-content">
+                        <a href="#our-culture">Our Culture</a>
+                    </div>
+                </li>
+                <li class="mobile-dropdown">
+                    <a href="products.html" class="mobile-nav-link">Products <i class="fas fa-chevron-down"></i></a>
+                    <div class="mobile-dropdown-content">
+                        <a href="#french-fries">French Fries</a>
+                        <a href="#xlf-fries">XLF Fries</a>
+                        <a href="#crinkle-fries">Crinkle Fries</a>
+                        <a href="#skin-on-fries">Skin on Fries</a>
+                    </div>
+                </li>
+                <li><a href="#seedtoshelf" class="mobile-nav-link">Seed to Shelf</a></li>
+                <li><a href="#exports" class="mobile-nav-link">Exports</a></li>
+                <li><a href="#recipes" class="mobile-nav-link">Recipes</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./assets/image/hyfun_logo.png" alt="HyFun Foods Logo" class="logo-image">
+                </a>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="about.html">About Us <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#our-culture">Our Culture</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="products.html">Products <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#french-fries">French Fries</a>
+                            <a href="#xlf-fries">XLF Fries</a>
+                            <a href="#crinkle-fries">Crinkle Fries</a>
+                            <a href="#skin-on-fries">Skin on Fries</a>
+                        </div>
+                    </li>
+                    <li><a href="#seedtoshelf">Seed to Shelf</a></li>
+                    <li><a href="#exports">Exports</a></li>
+                    <li><a href="#recipes">Recipes</a></li>
+                </ul>
+            </nav>
+            <div class="cart-account">
+                <a href="#cart" title="Cart"><i class="fas fa-shopping-cart"></i></a>
+                <a href="#account" title="My Account"><i class="fas fa-user-circle"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero section-bg" id="home">
+        <div class="bg-pattern"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Potatoes for the World</h1>
+                <p>At HyFun, we believe in spreading health & happiness to as many countries as we can. Packed with an
+                    authentic taste and goodness of potatoes, HyFun offers an extensive range of frozen snacks that is
+                    loved & relished by all.</p>
+                <a href="#products" class="btn">Explore Our Range</a>
+                <a href="#about" class="btn btn-outline">Know More</a>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-container">
+                    <img src="./assets/image/hyfun_food1.png"
+                        alt="Delicious potato snacks" class="hero-img">
+                    <div class="hero-badge badge-1">
+                        Ready in<br>3 Min!
+                    </div>
+                    <div class="hero-badge badge-2">
+                        100%<br>Natural
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Incredibly Tasty Section -->
+    <section class="incredibly-tasty section-bg">
+        <div class="bg-pattern bg-pattern-2"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Incredibly Tasty, Amazingly Quick</h2>
+                <p>Delicious, simple and oh-so-satisfying, that's what the HyFun experience is all about. Enjoy our wide
+                    range of savoury snacks packed with rich taste, exciting flavours and the goodness of potatoes!</p>
+                <div class="title-accent"></div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="./assets/image/french_fries.png"
+                        alt="Quick preparation" class="feature-img">
+                    <h3>Ready in 3 Min!</h3>
+                    <p>Our frozen snacks are designed to be ready in just 3 minutes, making meal prep quick and easy for
+                        busy families and individuals.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="./assets/image/Aloo_Tikki.png"
+                        alt="Vegetarian food" class="feature-img">
+                    <h3>100% Vegetarian</h3>
+                    <p>All our products are made from 100% vegetarian ingredients, ensuring quality, taste, and ethical
+                        consumption for everyone.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="./assets/image/veg_burger_patties.png"
+                        alt="Natural ingredients" class="feature-img">
+                    <h3>No Preservatives</h3>
+                    <p>We use natural ingredients with no added preservatives, keeping our snacks healthy, tasty, and
+                        wholesome for all ages.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Easy to Make Section -->
+    <section class="features section-bg">
+        <div class="bg-pattern bg-pattern-3"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Easy to Make and Simply Fun!</h2>
+                <p>Our products are designed for convenience without compromising on taste or quality. Perfect for any
+                    occasion!</p>
+                <div class="title-accent"></div>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="./assets/image/french_simple.jpg"
+                        alt="Simple preparation" class="feature-img">
+                    <h3>Simple Preparation</h3>
+                    <p>Just heat and serve - it's that simple! Perfect for busy families, students, and anyone who wants
+                        a delicious meal in minutes.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="./assets/image/Burger-Patty.jpg"
+                        alt="Fun food" class="feature-img">
+                    <h3>Fun for All Ages</h3>
+                    <p>From kids to adults, everyone loves our tasty potato snacks. Perfect for parties, gatherings, and
+                        family meals.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="./assets/image/PotatoBets-1.png"
+                        alt="Healthy food" class="feature-img">
+                    <h3>Healthy & Tasty</h3>
+                    <p>We combine health benefits with delicious flavors to create snacks you'll love without any guilt.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Potatoes Section -->
+    <section class="why-potatoes section-bg" id="about">
+        <div class="bg-pattern"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Potatoes?</h2>
+                <p>The humble potato is easily the most genius crop ever discovered. Boil them, bake them or fry them,
+                    they never disappoint.</p>
+                <div class="title-accent"></div>
+            </div>
+            <div class="potato-center-layout">
+                <div class="potato-fact top">
+                    <div class="fact-content">
+                        <div class="fact-icon">
+                            <i class="fas fa-apple-alt"></i>
+                        </div>
+                        <h4>Nutrient-Rich</h4>
+                        <p>Potatoes are a powerhouse of nutrients including vitamins C and B6, potassium, and fiber for
+                            a balanced diet.</p>
+                    </div>
+                </div>
+
+                <div class="potato-fact left">
+                    <div class="fact-content">
+                        <div class="fact-icon">
+                            <i class="fas fa-battery-full"></i>
+                        </div>
+                        <h4>Energy Boosting</h4>
+                        <p>With complex carbohydrates, potatoes provide sustained energy throughout the day without
+                            spikes.</p>
+                    </div>
+                </div>
+
+                <div class="potato-fact right">
+                    <div class="fact-content">
+                        <div class="fact-icon">
+                            <i class="fas fa-utensil-spoon"></i>
+                        </div>
+                        <h4>Versatile Ingredient</h4>
+                        <p>Potatoes can be prepared in countless ways, making them a kitchen staple worldwide for all
+                            cuisines.</p>
+                    </div>
+                </div>
+
+                <div class="potato-fact bottom">
+                    <div class="fact-content">
+                        <div class="fact-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h4>Naturally Delicious</h4>
+                        <p>With just 110 calories, a medium sized potato provides 30% of your daily value of vitamin C
+                            naturally.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Esteemed Clientele -->
+<section class="clients section-bg">
+    <div class="bg-pattern bg-pattern-2"></div>
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Esteemed Clientele</h2>
+            <p>Trusted by the biggest global brands in over 40 countries</p>
+            <div class="title-accent"></div>
+        </div>
+
+        <div class="logos-scroll-container">
+            <div class="logos-track" id="clienteleTrack">
+                <!-- McDonalds -->
+                <div class="logo-scroll-item">
+                    <img src="./assets/image/BK.jpg" 
+                         alt="McDonalds" 
+                         class="client-logo" 
+                         loading="eager">
+                </div>
+                
+                <!-- Burger King -->
+                <div class="logo-scroll-item">
+                    <img src="./assets/image/CARLS.png" 
+                         alt="Burger King" 
+                         class="client-logo" 
+                         loading="eager">
+                </div>
+                
+                <!-- KFC -->
+                <div class="logo-scroll-item">
+                    <img src="./assets/image/kfc.png" 
+                         alt="KFC" 
+                         class="client-logo" 
+                         loading="eager">
+                </div>
+                
+                <!-- Subway -->
+                <div class="logo-scroll-item">
+                    <img src="./assets/image/WHATABURGER.png" 
+                         alt="Subway" 
+                         class="client-logo" 
+                         loading="eager">
+                </div>
+                
+                <!-- Pizza Hut -->
+                <div class="logo-scroll-item">
+                    <img src="./assets/image/pizza-hut.png" 
+                         alt="Pizza Hut" 
+                         class="client-logo" 
+                         loading="eager">
+                </div>
+                
+                <!-- Domino's -->
+                <div class="logo-scroll-item">
+                    <img src="./assets/image/subway.png" 
+                         alt="Domino's" 
+                         class="client-logo" 
+                         loading="eager">
+                </div>
+                
+                <!-- Dunkin -->
+                <div class="logo-scroll-item">
+                    <img src="./assets/image/pvr.png" 
+                         alt="Dunkin" 
+                         class="client-logo" 
+                         loading="eager">
+                </div>
+                
+                <!-- Popeyes -->
+                <div class="logo-scroll-item">
+                    <img src="./assets/image/TACOBELL.png" 
+                         alt="Popeyes" 
+                         class="client-logo" 
+                         loading="eager">
+                </div>
+                
+                <!-- Hardees -->
+                <div class="logo-scroll-item">
+                    <img src="./assets/image/thepizza.jpg" 
+                         alt="Hardees" 
+                         class="client-logo" 
+                         loading="eager">
+                </div>
+                
+                <!-- Wendy's -->
+                <div class="logo-scroll-item">
+                    <img src="./assets/image/sizzler.png" 
+                         alt="Wendy's" 
+                         class="client-logo" 
+                         loading="eager">
+                </div>
+                
+                <!-- Taco Bell -->
+                <div class="logo-scroll-item">
+                    <img src="./assets/image/twc.png" 
+                         alt="Taco Bell" 
+                         class="client-logo" 
+                         loading="eager">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Retail Partners -->
+<section class="partners section-bg">
+    <div class="bg-pattern bg-pattern-3"></div>
+    <div class="container">
+        <div class="section-title">
+            <h2>Our Retail Partners</h2>
+            <p>Available at leading retail chains worldwide</p>
+            <div class="title-accent"></div>
+        </div>
+
+        <div class="logos-scroll-container">
+            <div class="logos-track" id="partnersTrack">
+                <!-- Walmart -->
+                <div class="logo-scroll-item">
+                    <img src="./assets/image/Dmart.png" 
+                         alt="Walmart" 
+                         class="client-logo" 
+                         loading="lazy">
+                </div>
+                
+                <!-- Amazon -->
+                <div class="logo-scroll-item">
+                    <img src="./assets/image/swiggy.png" 
+                         alt="Amazon" 
+                         class="client-logo" 
+                         loading="lazy">
+                </div>
+                
+                <!-- Costco -->
+                <div class="logo-scroll-item">
+                    <img src="./assets/image/blinkit.png" 
+                         alt="Costco" 
+                         class="client-logo" 
+                         loading="lazy">
+                </div>
+                
+                <!-- Target -->
+                <div class="logo-scroll-item">
+                    <img src="./assets/image/bigbasket.png" 
+                         alt="Target" 
+                         class="client-logo" 
+                         loading="lazy">
+                </div>
+                
+                <!-- Tesco -->
+                <div class="logo-scroll-item">
+                    <img src="./assets/image/jiomart.jpg" 
+                         alt="Tesco" 
+                         class="client-logo" 
+                         loading="lazy">
+                </div>
+                
+                <!-- Carrefour -->
+                <div class="logo-scroll-item">
+                    <img src="./assets/image/Reliance.png" 
+                         alt="Carrefour" 
+                         class="client-logo" 
+                         loading="lazy">
+                </div>
+                
+                <!-- Dmart -->
+                <div class="logo-scroll-item">
+                    <img src="./assets/image/AmazonFresh.jpg" 
+                         alt="Dmart" 
+                         class="client-logo" 
+                         loading="lazy">
+                </div>
+
+                 <!-- Walmart -->
+                <div class="logo-scroll-item">
+                    <img src="./assets/image/Dmart.png" 
+                         alt="Walmart" 
+                         class="client-logo" 
+                         loading="lazy">
+                </div>
+                
+                <!-- Amazon -->
+                <div class="logo-scroll-item">
+                    <img src="./assets/image/swiggy.png" 
+                         alt="Amazon" 
+                         class="client-logo" 
+                         loading="lazy">
+                </div>
+                
+                <!-- Costco -->
+                <div class="logo-scroll-item">
+                    <img src="./assets/image/blinkit.png" 
+                         alt="Costco" 
+                         class="client-logo" 
+                         loading="lazy">
+                </div>
+                
+                <!-- Target -->
+                <div class="logo-scroll-item">
+                    <img src="./assets/image/bigbasket.png" 
+                         alt="Target" 
+                         class="client-logo" 
+                         loading="lazy">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer id="connect">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>HyFun Foods</h3>
+                    <div class="contact-info" style="margin-top: 20px;">
+                        <p><i class="fas fa-globe"></i> hyfunfoods.com</p>
+                        <p><i class="fas fa-phone"></i> +91 75750 02999</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Global Headquarters</p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#events">News & Events</a></li>
+                        <li><a href="#recipes">Recipes</a></li>
+                        <li><a href="#connect">Connect With Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-building"></i> <strong>Corporate Office:</strong> HyFun Foods HQ</p>
+                        <p><i class="fas fa-industry"></i> <strong>Production Unit:</strong> State-of-the-art facilities
+                        </p>
+                        <p><i class="fas fa-chart-line"></i> <strong>Sales & Marketing:</strong> Global reach</p>
+                        <p><i class="fas fa-envelope"></i> sales@hyfunfoods.com</p>
+                        <p><i class="fas fa-envelope"></i> info@hyfunfoods.com</p>
+                        <p><i class="fas fa-envelope"></i> customerservice@hyfunfoods.com</p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#cookies">Cookie Policy</a></li>
+                        <li><a href="#sitemap">Sitemap</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 HyFun Foods. All rights reserved. | Potatoes for the World | Made with <i
+                        class="fas fa-heart" style="color: #ff4757;"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/mobile-menu.js"></script>
+</body>
+
+</html>

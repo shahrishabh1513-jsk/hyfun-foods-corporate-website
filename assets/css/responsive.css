@@ -1,0 +1,606 @@
+/* ============================================
+   RESPONSIVE STYLES FOR HYFUN FOODS
+   ============================================ */
+
+/* Extra Large Screens */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    .hero-text h1 {
+        font-size: 4rem;
+    }
+    
+    .section-title h2 {
+        font-size: 3rem;
+    }
+}
+
+/* Large Screens */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .potato-center-layout {
+        max-width: 800px;
+    }
+    
+    .potato-fact {
+        width: 220px;
+    }
+}
+
+/* Medium Screens */
+@media (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 25px;
+    }
+    
+    .hero-text h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-text p {
+        font-size: 1.1rem;
+    }
+    
+    .section-title h2 {
+        font-size: 2.2rem;
+    }
+    
+    .potato-center-layout {
+        max-width: 600px;
+        height: 550px;
+    }
+    
+    .potato-center-image {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .potato-fact .fact-content {
+        padding: 20px;
+    }
+}
+
+/* Small Screens */
+@media (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    
+    .header-container {
+        padding: 0 15px;
+    }
+    
+    .logo-image {
+        height: 50px;
+    }
+    
+    .hero {
+        margin-top: 70px;
+    }
+    
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-text p {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        padding: 12px 24px;
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        margin-bottom: 40px;
+    }
+    
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+    
+    .section-title p {
+        font-size: 0.95rem;
+    }
+    
+    .feature-card {
+        padding: 30px 20px;
+    }
+    
+    .feature-img {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .feature-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .logos-scroll-container {
+        margin: 30px 0;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 30px;
+    }
+    
+    .footer-column h3 {
+        font-size: 1.3rem;
+    }
+    
+    .copyright {
+        font-size: 0.8rem;
+    }
+    
+    /* Mobile menu adjustments */
+    .mobile-menu-content {
+        width: 280px;
+        padding: 20px;
+    }
+    
+    .mobile-nav-link {
+        font-size: 1rem;
+        padding: 10px 0;
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero {
+        padding: 100px 0 50px;
+    }
+    
+    .hero-text h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+    
+    .hero-text p {
+        font-size: 0.95rem;
+        margin-bottom: 20px;
+    }
+    
+    .hero-image-container {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .hero-badge {
+        width: 80px;
+        height: 80px;
+        font-size: 0.75rem;
+    }
+    
+    .section {
+        padding: 60px 0;
+    }
+    
+    .section-title h2 {
+        font-size: 1.6rem;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .feature-card {
+        padding: 25px 15px;
+    }
+    
+    .potato-fact .fact-content {
+        padding: 15px;
+    }
+    
+    .fact-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .potato-fact h4 {
+        font-size: 1.1rem;
+    }
+    
+    .logo-scroll-item {
+        width: 130px;
+        height: 70px;
+        padding: 15px;
+    }
+    
+    .client-logo {
+        max-height: 50px;
+    }
+    
+    .scroll-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .footer-column h3::after {
+        width: 30px;
+    }
+    
+    .mobile-menu-btn {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+    }
+    
+    .mobile-menu-content {
+        width: 250px;
+        padding: 15px;
+    }
+}
+
+/* Very Small Screens */
+@media (max-width: 375px) {
+    .hero-text h1 {
+        font-size: 1.6rem;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+    }
+    
+    .hero-image-container {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .section-title h2 {
+        font-size: 1.4rem;
+    }
+    
+    .mobile-menu-content {
+        width: 100%;
+        right: -100%;
+    }
+    
+    .mobile-menu-content.active {
+        right: 0;
+    }
+    
+    .logo-image {
+        height: 40px;
+    }
+}
+
+/* Landscape Mode for Mobile */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        padding: 120px 0 60px;
+    }
+    
+    .hero-content {
+        flex-direction: row;
+        text-align: left;
+    }
+    
+    .hero-text {
+        margin-bottom: 0;
+        margin-right: 30px;
+    }
+    
+    .hero-image-container {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .mobile-menu-content {
+        padding: 20px;
+    }
+    
+    .mobile-nav ul li {
+        margin-bottom: 10px;
+    }
+    
+    .mobile-nav-link {
+        padding: 8px 0;
+        font-size: 0.9rem;
+    }
+}
+
+/* High Resolution Screens */
+@media (min-width: 1920px) {
+    .container {
+        max-width: 1600px;
+    }
+    
+    .hero-text h1 {
+        font-size: 4.5rem;
+    }
+    
+    .hero-text p {
+        font-size: 1.4rem;
+    }
+    
+    .section-title h2 {
+        font-size: 3.5rem;
+    }
+    
+    .potato-center-layout {
+        max-width: 1200px;
+        height: 700px;
+    }
+    
+    .potato-center-image {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .potato-fact {
+        width: 280px;
+    }
+    
+    .potato-fact .fact-content {
+        padding: 30px;
+    }
+    
+    .fact-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .mobile-menu-btn,
+    .mobile-menu-overlay,
+    .mobile-menu-content,
+    .cart-account,
+    .btn-outline {
+        display: none !important;
+    }
+    
+    body {
+        background-color: white !important;
+        color: black !important;
+    }
+    
+    .feature-card,
+    .potato-fact .fact-content,
+    .logo-scroll-item {
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+    }
+    
+    .hero-img {
+        border: 2px solid #ddd !important;
+    }
+    
+    a {
+        color: black !important;
+        text-decoration: underline !important;
+    }
+}
+/* ============================================
+   ABOUT PAGE RESPONSIVE STYLES
+   ============================================ */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 992px) {
+    .about-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .about-hero .subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .legacy-text p {
+        font-size: 1rem;
+    }
+    
+    .mission-card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .green-card h4 {
+        font-size: 1.2rem;
+    }
+    
+    .timeline-content h4 {
+        font-size: 1.2rem;
+    }
+}
+
+/* Small Screens (Phones) */
+@media (max-width: 768px) {
+    .about-hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .about-hero .subtitle {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    
+    .stat h3 {
+        font-size: 1.8rem;
+    }
+    
+    .legacy-content {
+        gap: 30px;
+    }
+    
+    .legacy-text p {
+        font-size: 0.95rem;
+    }
+    
+    .mission-icon,
+    .green-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .mission-card,
+    .green-card {
+        padding: 25px 20px;
+    }
+    
+    .timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        padding-left: 60px;
+    }
+    
+    .timeline-year {
+        width: 100px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    
+    .timeline-content {
+        padding: 20px;
+    }
+    
+    .timeline-content h4 {
+        font-size: 1.1rem;
+    }
+    
+    .social-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 576px) {
+    .about-hero {
+        padding: 120px 0 50px;
+    }
+    
+    .hero-stats {
+        gap: 15px;
+    }
+    
+    .stat {
+        min-width: 80px;
+        padding: 10px;
+    }
+    
+    .stat h3 {
+        font-size: 1.6rem;
+    }
+    
+    .stat p {
+        font-size: 0.9rem;
+    }
+    
+    .legacy-img {
+        height: 200px;
+    }
+    
+    .image-caption {
+        padding: 15px 10px 10px;
+    }
+    
+    .image-caption h4 {
+        font-size: 1rem;
+    }
+    
+    .image-caption p {
+        font-size: 0.8rem;
+    }
+    
+    .mission-grid,
+    .green-grid {
+        gap: 20px;
+    }
+    
+    .timeline-item {
+        margin-bottom: 40px;
+    }
+    
+    .timeline-content p {
+        font-size: 0.9rem;
+    }
+    
+    .social-icons {
+        gap: 10px;
+    }
+}
+
+/* Landscape Mode for Mobile */
+@media (max-height: 600px) and (orientation: landscape) {
+    .about-hero {
+        padding: 100px 0 40px;
+    }
+    
+    .about-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-stats {
+        margin-top: 20px;
+    }
+    
+    .legacy-content {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .legacy-img {
+        height: 250px;
+    }
+}
+
+/* Print Styles for About Page */
+@media print {
+    .about-hero {
+        background: none !important;
+        color: black !important;
+    }
+    
+    .about-hero h1,
+    .about-hero .subtitle,
+    .stat h3,
+    .stat p {
+        color: black !important;
+    }
+    
+    .hero-stats {
+        border: 1px solid #ddd !important;
+        padding: 20px !important;
+    }
+    
+    .mission-card,
+    .green-card,
+    .timeline-content {
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+    }
+    
+    .social-connect {
+        display: none !important;
+    }
+}
