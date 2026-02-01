@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | HyFun Foods - Premium Potato Snacks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/products.css">
+</head>
+
+<body>
+    <!-- Mobile Menu Button -->
+    <div class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Mobile Menu Content -->
+    <div class="mobile-menu-content" id="mobileMenuContent">
+        <div class="mobile-menu-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./assets/image/hyfun_logo.png" alt="HyFun Foods Logo" class="logo-image">
+                </a>
+            </div>
+            <button class="close-menu-btn" id="closeMenuBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                <li class="mobile-dropdown">
+                    <a href="about.html" class="mobile-nav-link">About Us <i class="fas fa-chevron-down"></i></a>
+                    <div class="mobile-dropdown-content">
+                        <a href="culture.html">Our Culture</a>
+                    </div>
+                </li>
+                <li class="mobile-dropdown active">
+                    <a href="products.html" class="mobile-nav-link">Products <i class="fas fa-chevron-down"></i></a>
+                    <div class="mobile-dropdown-content">
+                        <a href="#french-fries">French Fries</a>
+                        <a href="#potato-specialties">Potato Specialties</a>
+                        <a href="#veggie-specialties">Veggie Specialties</a>
+                        <a href="#indian-ethnic">Indian Ethnic</a>
+                        <a href="#baked-snacks">Baked Snacks</a>
+                    </div>
+                </li>
+                <li><a href="seedtoshelf.html" class="mobile-nav-link">Seed to Shelf</a></li>
+                <li><a href="Exports.html" class="mobile-nav-link">Exports</a></li>
+                <li><a href="Recipes.html" class="mobile-nav-link">Recipes</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./assets/image/hyfun_logo.png" alt="HyFun Foods Logo" class="logo-image">
+                </a>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="about.html">About Us <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="culture.html">Our Culture</a>
+                        </div>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="products.html">Products <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#french-fries">French Fries</a>
+                            <a href="#potato-specialties">Potato Specialties</a>
+                            <a href="#veggie-specialties">Veggie Specialties</a>
+                            <a href="#indian-ethnic">Indian Ethnic</a>
+                            <a href="#baked-snacks">Baked Snacks</a>
+                        </div>
+                    </li>
+                    <li><a href="seedtoshelf.html">Seed to Shelf</a></li>
+                    <li><a href="Exports.html">Exports</a></li>
+                    <li><a href="Recipes.html">Recipes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Products Hero Section -->
+    <section class="products-hero section-bg">
+        <div class="bg-pattern"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>PREMIUM POTATO SNACKS COLLECTION</h1>
+                <p>Discover our extensive range of delicious, high-quality frozen snacks made from the finest potatoes. From classic favorites to innovative creations, we bring taste and convenience to every meal.</p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <h3>50+</h3>
+                        <p>Products</p>
+                    </div>
+                    <div class="hero-stat">
+                        <h3>8</h3>
+                        <p>Categories</p>
+                    </div>
+                    <div class="hero-stat">
+                        <h3>100%</h3>
+                        <p>Vegetarian</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="products-hero-container">
+                    <img src="./assets/image/hyfun_food1.png" alt="HyFun Products Collection" class="products-hero-img">
+                    <div class="floating-product product-1">
+                        <i class="fas fa-french-fries"></i>
+                    </div>
+                    <div class="floating-product product-2">
+                        <i class="fas fa-cheese"></i>
+                    </div>
+                    <div class="floating-product product-3">
+                        <i class="fas fa-pizza-slice"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- French Fries Products -->
+    <section class="product-category" id="french-fries">
+        <div class="container">
+            <div class="section-title">
+                <h2>French Fries Collection</h2>
+                <p>Crispy, golden, and perfectly seasoned - our French fries are made from premium potatoes for that authentic taste and texture</p>
+                <div class="title-accent"></div>
+            </div>
+            
+            <div class="products-grid">
+                <!-- French Fries -->
+                <div class="product-card" data-category="french-fries">
+                    <div class="product-image">
+                        <img src="./assets/image/french_fries.png" alt="French Fries" class="product-img">
+                        <div class="product-badge">Best Seller</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>French Fries</h3>
+                        <p class="product-desc">Classic straight-cut fries with perfect crispiness</p>
+                        <div class="product-tags">
+                            <span class="tag">Ready in 3 Min</span>
+                            <span class="tag">No Preservatives</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- XLF Fries -->
+                <div class="product-card" data-category="french-fries">
+                    <div class="product-image">
+                        <img src="./assets/image/hyfun_food1.png" alt="XLF Fries" class="product-img">
+                        <div class="product-badge">Extra Long</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>XLF Fries</h3>
+                        <p class="product-desc">Extra long fries for that premium restaurant feel</p>
+                        <div class="product-tags">
+                            <span class="tag">Extra Length</span>
+                            <span class="tag">Premium Cut</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Crinkle Fries -->
+                <div class="product-card" data-category="french-fries">
+                    <div class="product-image">
+                        <img src="./assets/image/hyfun_food1.png" alt="Crinkle Fries" class="product-img">
+                        <div class="product-badge">Crinkle Cut</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Crinkle Fries</h3>
+                        <p class="product-desc">Fun crinkle-cut shape holds more seasoning</p>
+                        <div class="product-tags">
+                            <span class="tag">Crinkle Cut</span>
+                            <span class="tag">Extra Crispy</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Skin on Fries -->
+                <div class="product-card" data-category="french-fries">
+                    <div class="product-image">
+                        <img src="./assets/image/hyfun_food1.png" alt="Skin on Fries" class="product-img">
+                        <div class="product-badge">Natural</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Skin on Fries</h3>
+                        <p class="product-desc">Fries with skin for extra nutrients and rustic taste</p>
+                        <div class="product-tags">
+                            <span class="tag">Skin On</span>
+                            <span class="tag">Natural</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Flavory Fries -->
+                <div class="product-card" data-category="french-fries">
+                    <div class="product-image">
+                        <img src="./assets/image/hyfun_food1.png" alt="Flavory Fries" class="product-img">
+                        <div class="product-badge">Seasoned</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Flavory Fries</h3>
+                        <p class="product-desc">Pre-seasoned fries with delicious flavors</p>
+                        <div class="product-tags">
+                            <span class="tag">Seasoned</span>
+                            <span class="tag">Ready to Cook</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Potato Specialties -->
+    <section class="product-category section-bg" id="potato-specialties">
+        <div class="bg-pattern bg-pattern-2"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Potato Specialties</h2>
+                <p>Innovative potato creations that go beyond traditional fries</p>
+                <div class="title-accent"></div>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Potato Wedges -->
+                <div class="product-card" data-category="potato-specialties">
+                    <div class="product-image">
+                        <img src="./assets/image/hyfun_food1.png" alt="Potato Wedges" class="product-img">
+                        <div class="product-badge">Classic</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Potato Wedges</h3>
+                        <p class="product-desc">Thick-cut wedges with skin, perfect for dipping</p>
+                        <div class="product-tags">
+                            <span class="tag">Wedges</span>
+                            <span class="tag">Skin On</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hash Brown Patties -->
+                <div class="product-card" data-category="potato-specialties">
+                    <div class="product-image">
+                        <img src="./assets/image/hyfun_food1.png" alt="Hash Brown Patties" class="product-img">
+                        <div class="product-badge">Breakfast</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Hash Brown Patties</h3>
+                        <p class="product-desc">Crispy shredded potato patties</p>
+                        <div class="product-tags">
+                            <span class="tag">Breakfast</span>
+                            <span class="tag">Crispy</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tater Shotz -->
+                <div class="product-card" data-category="potato-specialties">
+                    <div class="product-image">
+                        <img src="./assets/image/PotatoBets-1.png" alt="Tater Shotz" class="product-img">
+                        <div class="product-badge">Bite-sized</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Tater Shotz</h3>
+                        <p class="product-desc">Bite-sized potato nuggets</p>
+                        <div class="product-tags">
+                            <span class="tag">Bite-sized</span>
+                            <span class="tag">Party Snack</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Spicy Hash Brown -->
+                <div class="product-card" data-category="potato-specialties">
+                    <div class="product-image">
+                        <img src="./assets/image/hyfun_food1.png" alt="Spicy Hash Brown" class="product-img">
+                        <div class="product-badge">Spicy</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Spicy Hash Brown</h3>
+                        <p class="product-desc">Hash browns with a spicy kick</p>
+                        <div class="product-tags">
+                            <span class="tag">Spicy</span>
+                            <span class="tag">Hot</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Potatobets -->
+                <div class="product-card" data-category="potato-specialties">
+                    <div class="product-image">
+                        <img src="./assets/image/PotatoBets-1.png" alt="Potatobets" class="product-img">
+                        <div class="product-badge">New</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Potatobets</h3>
+                        <p class="product-desc">Crunchy potato bets with seasoning</p>
+                        <div class="product-tags">
+                            <span class="tag">Crunchy</span>
+                            <span class="tag">Seasoned</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Veggie Specialties -->
+    <section class="product-category" id="veggie-specialties">
+        <div class="container">
+            <div class="section-title">
+                <h2>Veggie Specialties</h2>
+                <p>Delicious vegetarian creations combining potatoes with other wholesome ingredients</p>
+                <div class="title-accent"></div>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Veg Burger Patty -->
+                <div class="product-card" data-category="veggie-specialties">
+                    <div class="product-image">
+                        <img src="./assets/image/veg_burger_patties.png" alt="Veg Burger Patty" class="product-img">
+                        <div class="product-badge">Burger</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Veg Burger Patty</h3>
+                        <p class="product-desc">Perfect patty for vegetarian burgers</p>
+                        <div class="product-tags">
+                            <span class="tag">Burger</span>
+                            <span class="tag">Protein Rich</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cheesy Paneer Patty -->
+                <div class="product-card" data-category="veggie-specialties">
+                    <div class="product-image">
+                        <img src="./assets/image/hyfun_food1.png" alt="Cheesy Paneer Patty" class="product-img">
+                        <div class="product-badge">Cheese</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Cheesy Paneer Patty</h3>
+                        <p class="product-desc">Paneer and cheese filled patty</p>
+                        <div class="product-tags">
+                            <span class="tag">Cheese</span>
+                            <span class="tag">Paneer</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Jalapeño Cheesy Pops -->
+                <div class="product-card" data-category="veggie-specialties">
+                    <div class="product-image">
+                        <img src="./assets/image/hyfun_food1.png" alt="Jalapeño Cheesy Pops" class="product-img">
+                        <div class="product-badge">Spicy</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Jalapeño Cheesy Pops</h3>
+                        <p class="product-desc">Spicy jalapeño and cheese bites</p>
+                        <div class="product-tags">
+                            <span class="tag">Spicy</span>
+                            <span class="tag">Cheese</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mozzarella Cheese Stix -->
+                <div class="product-card" data-category="veggie-specialties">
+                    <div class="product-image">
+                        <img src="./assets/image/hyfun_food1.png" alt="Mozzarella Cheese Stix" class="product-img">
+                        <div class="product-badge">Cheesy</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Mozzarella Cheese Stix</h3>
+                        <p class="product-desc">Breaded mozzarella cheese sticks</p>
+                        <div class="product-tags">
+                            <span class="tag">Mozzarella</span>
+                            <span class="tag">Sticks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Indian Ethnic -->
+    <section class="product-category section-bg" id="indian-ethnic">
+        <div class="bg-pattern bg-pattern-3"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Indian Ethnic Snacks</h2>
+                <p>Traditional Indian snacks made with authentic flavors and recipes</p>
+                <div class="title-accent"></div>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Aloo Tikki -->
+                <div class="product-card" data-category="indian-ethnic">
+                    <div class="product-image">
+                        <img src="./assets/image/Aloo_Tikki.png" alt="Aloo Tikki" class="product-img">
+                        <div class="product-badge">Traditional</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Aloo Tikki</h3>
+                        <p class="product-desc">Classic Indian potato patties with spices</p>
+                        <div class="product-tags">
+                            <span class="tag">Traditional</span>
+                            <span class="tag">Spiced</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hara Bhara Kebab -->
+                <div class="product-card" data-category="indian-ethnic">
+                    <div class="product-image">
+                        <img src="./assets/image/hyfun_food1.png" alt="Hara Bhara Kebab" class="product-img">
+                        <div class="product-badge">Green</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Hara Bhara Kebab</h3>
+                        <p class="product-desc">Spinach and potato kebabs</p>
+                        <div class="product-tags">
+                            <span class="tag">Spinach</span>
+                            <span class="tag">Healthy</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mumbai Aloo Vada -->
+                <div class="product-card" data-category="indian-ethnic">
+                    <div class="product-image">
+                        <img src="./assets/image/hyfun_food1.png" alt="Mumbai Aloo Vada" class="product-img">
+                        <div class="product-badge">Street Food</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Mumbai Aloo Vada</h3>
+                        <p class="product-desc">Mumbai-style potato vada</p>
+                        <div class="product-tags">
+                            <span class="tag">Street Food</span>
+                            <span class="tag">Spicy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Baked Snacks -->
+    <section class="product-category" id="baked-snacks">
+        <div class="container">
+            <div class="section-title">
+                <h2>Baked Snacks</h2>
+                <p>Healthier baked options without compromising on taste</p>
+                <div class="title-accent"></div>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Margherita Pizza -->
+                <div class="product-card" data-category="baked-snacks">
+                    <div class="product-image">
+                        <img src="./assets/image/hyfun_food1.png" alt="Margherita Pizza" class="product-img">
+                        <div class="product-badge">Pizza</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Margherita Pizza</h3>
+                        <p class="product-desc">Classic margherita pizza pockets</p>
+                        <div class="product-tags">
+                            <span class="tag">Pizza</span>
+                            <span class="tag">Baked</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Apple Pie -->
+                <div class="product-card" data-category="baked-snacks">
+                    <div class="product-image">
+                        <img src="./assets/image/hyfun_food1.png" alt="Apple Pie" class="product-img">
+                        <div class="product-badge">Dessert</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Apple Pie</h3>
+                        <p class="product-desc">Sweet apple filled pastry</p>
+                        <div class="product-tags">
+                            <span class="tag">Dessert</span>
+                            <span class="tag">Sweet</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mexicano Puffets -->
+                <div class="product-card" data-category="baked-snacks">
+                    <div class="product-image">
+                        <img src="./assets/image/hyfun_food1.png" alt="Mexicano Puffets" class="product-img">
+                        <div class="product-badge">Mexican</div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Mexicano Puffets</h3>
+                        <p class="product-desc">Mexican style seasoned puffs</p>
+                        <div class="product-tags">
+                            <span class="tag">Mexican</span>
+                            <span class="tag">Seasoned</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Features -->
+    <section class="products-features section-bg">
+        <div class="bg-pattern"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose HyFun Products?</h2>
+                <p>Quality and taste you can trust in every bite</p>
+                <div class="title-accent"></div>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Premium Quality Potatoes</h3>
+                    <p>Made from carefully selected premium potatoes grown in ideal conditions</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Ready in Minutes</h3>
+                    <p>Most products ready in just 3-5 minutes - perfect for busy lifestyles</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3>100% Vegetarian</h3>
+                    <p>All products made from 100% vegetarian ingredients with no animal products</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-prescription-bottle"></i>
+                    </div>
+                    <h3>No Preservatives</h3>
+                    <p>Natural ingredients with no added preservatives or artificial colors</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Catalog -->
+    <section class="catalog-section">
+        <div class="container">
+            <div class="catalog-content">
+                <div class="catalog-text">
+                    <h2>Download Our Product Catalog</h2>
+                    <p>Get complete details about all our products, specifications, and packaging options</p>
+                    <a href="#" class="btn btn-catalog">
+                        <i class="fas fa-download"></i>
+                        Download Catalog (PDF)
+                    </a>
+                </div>
+                <div class="catalog-image">
+                    <img src="./assets/image/hyfun_logo.png" alt="Product Catalog">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="connect">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>HyFun Foods</h3>
+                    <div class="contact-info" style="margin-top: 20px;">
+                        <p><i class="fas fa-globe"></i> hyfunfoods.com</p>
+                        <p><i class="fas fa-phone"></i> +91 75750 02999</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Global Headquarters</p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="seedtoshelf.html">seed to shelf</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="Exports.html">Exports</a></li>
+                        <li><a href="Recipes.html">Recipes</a></li>
+                        <li><a href="#connect">Connect With Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-building"></i> <strong>Corporate Office:</strong> HyFun Foods HQ</p>
+                        <p><i class="fas fa-industry"></i> <strong>Production Unit:</strong> State-of-the-art facilities</p>
+                        <p><i class="fas fa-chart-line"></i> <strong>Sales & Marketing:</strong> Global reach</p>
+                        <p><i class="fas fa-envelope"></i> sales@hyfunfoods.com</p>
+                        <p><i class="fas fa-envelope"></i> info@hyfunfoods.com</p>
+                        <p><i class="fas fa-envelope"></i> customerservice@hyfunfoods.com</p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#cookies">Cookie Policy</a></li>
+                        <li><a href="#sitemap">Sitemap</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 HyFun Foods. All rights reserved. | Potatoes for the World | Made with <i
+                        class="fas fa-heart" style="color: #ff4757;"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/products.js"></script>
+    <script src="./assets/js/mobile-menu.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes | HyFun Foods - Delicious Potato Creations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/recipes.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+</head>
+
+<body>
+    <!-- Mobile Menu Button -->
+    <div class="mobile-menu-btn" id="mobileMenuBtn">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+
+    <!-- Mobile Menu Content -->
+    <div class="mobile-menu-content" id="mobileMenuContent">
+        <div class="mobile-menu-header">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./assets/image/hyfun_logo.png" alt="HyFun Foods Logo" class="logo-image">
+                </a>
+            </div>
+            <button class="close-menu-btn" id="closeMenuBtn">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+                <li class="mobile-dropdown">
+                    <a href="about.html" class="mobile-nav-link">About Us <i class="fas fa-chevron-down"></i></a>
+                    <div class="mobile-dropdown-content">
+                        <a href="culture.html">Our Culture</a>
+                    </div>
+                </li>
+                <li class="mobile-dropdown">
+                    <a href="products.html" class="mobile-nav-link">Products <i class="fas fa-chevron-down"></i></a>
+                    <div class="mobile-dropdown-content">
+                        <a href="#french-fries">French Fries</a>
+                        <a href="#potato-specialties">Potato Specialties</a>
+                        <a href="#veggie-specialties">Veggie Specialties</a>
+                        <a href="#indian-ethnic">Indian Ethnic</a>
+                    </div>
+                </li>
+                <li><a href="seedtoshelf.html" class="mobile-nav-link">Seed to Shelf</a></li>
+                <li><a href="exports.html" class="mobile-nav-link">Exports</a></li>
+                <li class="mobile-dropdown active">
+                    <a href="recipes.html" class="mobile-nav-link">Recipes <i class="fas fa-chevron-down"></i></a>
+                    <div class="mobile-dropdown-content">
+                        <a href="#featured-recipes">Featured Recipes</a>
+                        <a href="#quick-easy">Quick & Easy</a>
+                        <a href="#party-snacks">Party Snacks</a>
+                        <a href="#healthy-options">Healthy Options</a>
+                        <a href="#video-recipes">Video Recipes</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="./assets/image/hyfun_logo.png" alt="HyFun Foods Logo" class="logo-image">
+                </a>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="about.html">About Us <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="culture.html">Our Culture</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="products.html">Products <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#french-fries">French Fries</a>
+                            <a href="#potato-specialties">Potato Specialties</a>
+                            <a href="#veggie-specialties">Veggie Specialties</a>
+                            <a href="#indian-ethnic">Indian Ethnic</a>
+                        </div>
+                    </li>
+                    <li><a href="seedtoshelf.html">Seed to Shelf</a></li>
+                    <li><a href="exports.html">Exports</a></li>
+                    <li class="dropdown active">
+                        <a href="recipes.html">Recipes <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#featured-recipes">Featured Recipes</a>
+                            <a href="#quick-easy">Quick & Easy</a>
+                            <a href="#party-snacks">Party Snacks</a>
+                            <a href="#healthy-options">Healthy Options</a>
+                            <a href="#video-recipes">Video Recipes</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Recipes Hero Section -->
+    <section class="recipes-hero section-bg">
+        <div class="bg-pattern bg-pattern-recipes"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>DELICIOUS RECIPES WITH HYFUN</h1>
+                    <p class="hero-subtitle">Transform ordinary meals into extraordinary experiences with our easy-to-make, 
+                        incredibly tasty potato snack recipes. Perfect for every occasion!</p>
+                    
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <h3>50+</h3>
+                            <p>Recipes</p>
+                        </div>
+                        <div class="hero-stat">
+                            <h3>3-15</h3>
+                            <p>Min Prep Time</p>
+                        </div>
+                        <div class="hero-stat">
+                            <h3>100%</h3>
+                            <p>Vegetarian</p>
+                        </div>
+                    </div>
+                    
+                    <div class="search-container">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="recipeSearch" placeholder="Search recipes by name, ingredient, or category...">
+                            <button class="search-btn">Search</button>
+                        </div>
+                        <div class="search-tags">
+                            <span class="search-tag" data-category="quick">Quick & Easy</span>
+                            <span class="search-tag" data-category="party">Party Snacks</span>
+                            <span class="search-tag" data-category="healthy">Healthy Options</span>
+                            <span class="search-tag" data-category="kid">Kid Friendly</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="floating-recipe">
+                        <div class="recipe-card-preview">
+                            <div class="recipe-badge">Featured</div>
+                            <img src="./assets/image/french_fries.png" alt="Recipe Preview">
+                            <div class="recipe-info-preview">
+                                <h4>Crispy Loaded Fries</h4>
+                                <p>Ready in 10 min</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-ingredients">
+                        <div class="ingredient">
+                            <i class="fas fa-cheese"></i>
+                            <span>Cheese</span>
+                        </div>
+                        <div class="ingredient">
+                            <i class="fas fa-pepper-hot"></i>
+                            <span>Spices</span>
+                        </div>
+                        <div class="ingredient">
+                            <i class="fas fa-leaf"></i>
+                            <span>Herbs</span>
+                        </div>
+                        <div class="ingredient">
+                            <i class="fas fa-bread-slice"></i>
+                            <span>Bread</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Recipes Section -->
+    <section class="featured-recipes section-bg" id="featured-recipes">
+        <div class="bg-pattern bg-pattern-2"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Recipes</h2>
+                <p>Discover our most popular and delicious potato snack creations</p>
+                <div class="title-accent"></div>
+            </div>
+            
+            <div class="featured-slider">
+                <div class="featured-slide active" data-id="1">
+                    <div class="slide-content">
+                        <div class="slide-image">
+                            <img src="./assets/image/french_fries.png" alt="Loaded Cheese Fries">
+                            <div class="play-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="slide-info">
+                            <div class="recipe-meta">
+                                <span class="meta-item"><i class="fas fa-clock"></i> 15 min</span>
+                                <span class="meta-item"><i class="fas fa-user-friends"></i> 4 servings</span>
+                                <span class="meta-item"><i class="fas fa-fire"></i> Easy</span>
+                            </div>
+                            <h3>Loaded Cheese Fries Supreme</h3>
+                            <p class="recipe-desc">Crispy HyFun fries loaded with melted cheese, jalapeños, sour cream, 
+                                and spring onions. Perfect game day snack!</p>
+                            <div class="recipe-tags">
+                                <span class="recipe-tag">Party Snack</span>
+                                <span class="recipe-tag">Cheesy</span>
+                                <span class="recipe-tag">American</span>
+                            </div>
+                            <button class="btn btn-view-recipe" data-id="1">
+                                <i class="fas fa-utensils"></i> View Full Recipe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+                <div class="featured-slide" data-id="2">
+                    <div class="slide-content">
+                        <div class="slide-image">
+                            <img src="./assets/image/Aloo_Tikki.png" alt="Aloo Tikki Burger">
+                            <div class="play-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="slide-info">
+                            <div class="recipe-meta">
+                                <span class="meta-item"><i class="fas fa-clock"></i> 20 min</span>
+                                <span class="meta-item"><i class="fas fa-user-friends"></i> 2 servings</span>
+                                <span class="meta-item"><i class="fas fa-fire"></i> Medium</span>
+                            </div>
+                            <h3>Aloo Tikki Burger Deluxe</h3>
+                            <p class="recipe-desc">HyFun Aloo Tikki paired with fresh veggies and special sauces in a 
+                                soft burger bun. A perfect vegetarian delight!</p>
+                            <div class="recipe-tags">
+                                <span class="recipe-tag">Indian</span>
+                                <span class="recipe-tag">Burger</span>
+                                <span class="recipe-tag">Street Food</span>
+                            </div>
+                            <button class="btn btn-view-recipe" data-id="2">
+                                <i class="fas fa-utensils"></i> View Full Recipe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="slider-controls">
+                    <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <div class="slider-dots">
+                        <span class="dot active" data-slide="0"></span>
+                        <span class="dot" data-slide="1"></span>
+                    </div>
+                    <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Categories -->
+    <section class="recipe-categories section-bg" id="quick-easy">
+        <div class="bg-pattern bg-pattern-3"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Browse by Category</h2>
+                <p>Find recipes that match your mood and occasion</p>
+                <div class="title-accent"></div>
+            </div>
+            
+            <div class="categories-grid">
+                <div class="category-card" data-category="quick">
+                    <div class="category-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Quick & Easy</h3>
+                    <p>Recipes ready in under 15 minutes</p>
+                    <span class="recipe-count">12 Recipes</span>
+                </div>
+                
+                <div class="category-card" data-category="party">
+                    <div class="category-icon">
+                        <i class="fas fa-glass-cheers"></i>
+                    </div>
+                    <h3>Party Snacks</h3>
+                    <p>Perfect for gatherings and events</p>
+                    <span class="recipe-count">18 Recipes</span>
+                </div>
+                
+                <div class="category-card" data-category="healthy">
+                    <div class="category-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Healthy Options</h3>
+                    <p>Nutritious and delicious combinations</p>
+                    <span class="recipe-count">10 Recipes</span>
+                </div>
+                
+                <div class="category-card" data-category="kid">
+                    <div class="category-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Kid Friendly</h3>
+                    <p>Recipes kids will love</p>
+                    <span class="recipe-count">8 Recipes</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All Recipes Grid -->
+    <section class="all-recipes section-bg" id="party-snacks">
+        <div class="bg-pattern"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2>All Recipes</h2>
+                <p>Explore our complete collection of delicious potato snack recipes</p>
+                <div class="title-accent"></div>
+            </div>
+            
+            
+            <div class="recipes-grid">
+                <!-- Recipe 1 -->
+                <div class="recipe-card" data-category="quick" data-id="1">
+                    <div class="recipe-image">
+                        <img src="./assets/image/french_fries.png" alt="Loaded Cheese Fries">
+                        <div class="recipe-overlay">
+                            <div class="play-btn-small" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="quick-view-btn" data-id="1">
+                                <i class="fas fa-eye"></i> Quick View
+                            </div>
+                        </div>
+                        <div class="recipe-badge">15 min</div>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Loaded Cheese Fries</h3>
+                        <p class="recipe-desc">Crispy fries with melted cheese and toppings</p>
+                        <div class="recipe-meta-small">
+                            <span><i class="fas fa-user-friends"></i> 4</span>
+                            <span><i class="fas fa-fire"></i> Easy</span>
+                        </div>
+                        <button class="btn-recipe" data-id="1">
+                            <i class="fas fa-utensils"></i> View Recipe
+                        </button>
+                    </div>
+                </div>
+
+                
+                
+                <!-- Recipe 2 -->
+                <div class="recipe-card" data-category="party" data-id="2">
+                    <div class="recipe-image">
+                        <img src="./assets/image/Aloo_Tikki.png" alt="Aloo Tikki Burger">
+                        <div class="recipe-overlay">
+                            <div class="play-btn-small" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="quick-view-btn" data-id="2">
+                                <i class="fas fa-eye"></i> Quick View
+                            </div>
+                        </div>
+                        <div class="recipe-badge">20 min</div>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Aloo Tikki Burger</h3>
+                        <p class="recipe-desc">Spicy potato patty in a soft burger bun</p>
+                        <div class="recipe-meta-small">
+                            <span><i class="fas fa-user-friends"></i> 2</span>
+                            <span><i class="fas fa-fire"></i> Medium</span>
+                        </div>
+                        <button class="btn-recipe" data-id="2">
+                            <i class="fas fa-utensils"></i> View Recipe
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Recipe 3 -->
+                <div class="recipe-card" data-category="healthy" data-id="3">
+                    <div class="recipe-image">
+                        <img src="./assets/image/veg_burger_patties.png" alt="Veggie Burger">
+                        <div class="recipe-overlay">
+                            <div class="play-btn-small" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="quick-view-btn" data-id="3">
+                                <i class="fas fa-eye"></i> Quick View
+                            </div>
+                        </div>
+                        <div class="recipe-badge">25 min</div>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Gourmet Veggie Burger</h3>
+                        <p class="recipe-desc">Healthy patty with fresh vegetables</p>
+                        <div class="recipe-meta-small">
+                            <span><i class="fas fa-user-friends"></i> 2</span>
+                            <span><i class="fas fa-fire"></i> Easy</span>
+                        </div>
+                        <button class="btn-recipe" data-id="3">
+                            <i class="fas fa-utensils"></i> View Recipe
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Recipe 4 -->
+                <div class="recipe-card" data-category="kid" data-id="4">
+                    <div class="recipe-image">
+                        <img src="./assets/image/PotatoBets-1.png" alt="Potato Bites">
+                        <div class="recipe-overlay">
+                            <div class="play-btn-small" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="quick-view-btn" data-id="4">
+                                <i class="fas fa-eye"></i> Quick View
+                            </div>
+                        </div>
+                        <div class="recipe-badge">10 min</div>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Cheesy Potato Bites</h3>
+                        <p class="recipe-desc">Bite-sized cheesy potato snacks</p>
+                        <div class="recipe-meta-small">
+                            <span><i class="fas fa-user-friends"></i> 4</span>
+                            <span><i class="fas fa-fire"></i> Easy</span>
+                        </div>
+                        <button class="btn-recipe" data-id="4">
+                            <i class="fas fa-utensils"></i> View Recipe
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Recipe 5 -->
+                <div class="recipe-card" data-category="party" data-id="5">
+                    <div class="recipe-image">
+                        <img src="./assets/image/Burger-Patty.jpg" alt="Burger Party Platter">
+                        <div class="recipe-overlay">
+                            <div class="play-btn-small" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="quick-view-btn" data-id="5">
+                                <i class="fas fa-eye"></i> Quick View
+                            </div>
+                        </div>
+                        <div class="recipe-badge">30 min</div>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>Burger Party Platter</h3>
+                        <p class="recipe-desc">Assorted burger patties with dips</p>
+                        <div class="recipe-meta-small">
+                            <span><i class="fas fa-user-friends"></i> 6</span>
+                            <span><i class="fas fa-fire"></i> Medium</span>
+                        </div>
+                        <button class="btn-recipe" data-id="5">
+                            <i class="fas fa-utensils"></i> View Recipe
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Recipe 6 -->
+                <div class="recipe-card" data-category="quick" data-id="6">
+                    <div class="recipe-image">
+                        <img src="./assets/image/french_simple.jpg" alt="French Fry Nachos">
+                        <div class="recipe-overlay">
+                            <div class="play-btn-small" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="quick-view-btn" data-id="6">
+                                <i class="fas fa-eye"></i> Quick View
+                            </div>
+                        </div>
+                        <div class="recipe-badge">12 min</div>
+                    </div>
+                    <div class="recipe-info">
+                        <h3>French Fry Nachos</h3>
+                        <p class="recipe-desc">Fries topped like traditional nachos</p>
+                        <div class="recipe-meta-small">
+                            <span><i class="fas fa-user-friends"></i> 2</span>
+                            <span><i class="fas fa-fire"></i> Easy</span>
+                        </div>
+                        <button class="btn-recipe" data-id="6">
+                            <i class="fas fa-utensils"></i> View Recipe
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="load-more-container">
+                <button class="btn btn-load-more">
+                    <i class="fas fa-plus"></i> Load More Recipes
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Recipes Section -->
+    <section class="video-recipes section-bg" id="video-recipes">
+        <div class="bg-pattern bg-pattern-2"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Video Recipes</h2>
+                <p>Watch our recipes come to life with step-by-step video guides</p>
+                <div class="title-accent"></div>
+            </div>
+            
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-container">
+                        <div class="video-thumbnail">
+                            <img src="./assets/image/french_fries.png" alt="Loaded Fries Video">
+                            <div class="video-play-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Loaded Fries in 10 Minutes</h3>
+                            <p class="video-desc">Learn to make delicious loaded fries quickly</p>
+                            <div class="video-meta">
+                                <span><i class="fas fa-clock"></i> 5:30 min</span>
+                                <span><i class="fas fa-eye"></i> 15K views</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-container">
+                        <div class="video-thumbnail">
+                            <img src="./assets/image/Aloo_Tikki.png" alt="Aloo Tikki Video">
+                            <div class="video-play-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Perfect Aloo Tikki Burger</h3>
+                            <p class="video-desc">Master the art of making crispy tikki burgers</p>
+                            <div class="video-meta">
+                                <span><i class="fas fa-clock"></i> 7:15 min</span>
+                                <span><i class="fas fa-eye"></i> 12K views</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-container">
+                        <div class="video-thumbnail">
+                            <img src="./assets/image/veg_burger_patties.png" alt="Veggie Burger Video">
+                            <div class="video-play-btn" data-video="https://www.youtube.com/embed/dQw4w9WgXcQ">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <h3>Healthy Veggie Burger Guide</h3>
+                            <p class="video-desc">Create nutritious and tasty veggie burgers</p>
+                            <div class="video-meta">
+                                <span><i class="fas fa-clock"></i> 8:45 min</span>
+                                <span><i class="fas fa-eye"></i> 8K views</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Tips Section -->
+    <section class="recipe-tips section-bg" id="healthy-options">
+        <div class="bg-pattern bg-pattern-3"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Cooking Tips & Tricks</h2>
+                <p>Expert advice to make your cooking experience better</p>
+                <div class="title-accent"></div>
+            </div>
+            
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-temperature-high"></i>
+                    </div>
+                    <h3>Perfect Temperature</h3>
+                    <p>Always preheat your oven or air fryer for crispy results. 180°C is ideal for most snacks.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Timing Matters</h3>
+                    <p>Don't overcrowd the cooking surface. Cook in batches for even crispiness.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Fresh Ingredients</h3>
+                    <p>Use fresh vegetables and herbs for enhanced flavor and nutrition.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-icon">
+                        <i class="fas fa-mortar-pestle"></i>
+                    </div>
+                    <h3>Spice Blending</h3>
+                    <p>Mix spices with a little oil before applying for better adhesion and flavor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Share Recipes Section -->
+    <section class="share-recipes section-bg">
+        <div class="bg-pattern"></div>
+        <div class="container">
+            <div class="share-content">
+                <h2>Share Your Creations</h2>
+                <p>Made one of our recipes? Share your masterpiece with the HyFun community!</p>
+                
+                <div class="share-options">
+                    <a href="#" class="share-option">
+                        <i class="fab fa-instagram"></i>
+                        <h4>Instagram</h4>
+                        <p>Tag @hyfunfoods</p>
+                    </a>
+                    
+                    <a href="#" class="share-option">
+                        <i class="fab fa-facebook"></i>
+                        <h4>Facebook</h4>
+                        <p>Post in our community</p>
+                    </a>
+                    
+                    <a href="#" class="share-option">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email Us</h4>
+                        <p>Send photos & feedback</p>
+                    </a>
+                </div>
+                
+                <div class="hashtag">
+                    <i class="fas fa-hashtag"></i>
+                    <span>#HyFunRecipes #PotatoMagic #EasySnacking</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="connect">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>HyFun Foods</h3>
+                    <div class="contact-info" style="margin-top: 20px;">
+                        <p><i class="fas fa-globe"></i> hyfunfoods.com</p>
+                        <p><i class="fas fa-phone"></i> +91 75750 02999</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Global Headquarters</p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="seedtoshelf.html">Seed to Shelf</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="exports.html">Exports</a></li>
+                        <li><a href="recipes.html">Recipes</a></li>
+                        <li><a href="#connect">Connect With Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-building"></i> <strong>Corporate Office:</strong> HyFun Foods HQ</p>
+                        <p><i class="fas fa-industry"></i> <strong>Production Unit:</strong> State-of-the-art facilities</p>
+                        <p><i class="fas fa-utensils"></i> <strong>Recipe Support:</strong> recipes@hyfunfoods.com</p>
+                        <p><i class="fas fa-envelope"></i> info@hyfunfoods.com</p>
+                        <p><i class="fas fa-envelope"></i> customerservice@hyfunfoods.com</p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#cookies">Cookie Policy</a></li>
+                        <li><a href="#sitemap">Sitemap</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 HyFun Foods. All rights reserved. | Potatoes for the World | Made with <i
+                        class="fas fa-heart" style="color: #ff4757;"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Recipe Detail Modal -->
+    <div class="recipe-modal-overlay" id="recipeModal">
+        <div class="recipe-modal">
+            <button class="close-modal-btn" id="closeRecipeModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="recipe-modal-content" id="recipeModalContent">
+                <!-- Content will be loaded here dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Player Modal -->
+    <div class="video-modal-overlay" id="videoModal">
+        <div class="video-modal">
+            <button class="close-video-btn" id="closeVideoModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="video-player-container" id="videoPlayer">
+                <!-- Video player will be loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <script src="./assets/js/recipes.js"></script>
+    <script src="./assets/js/mobile-menu.js"></script>
+</body>
+
+</html>

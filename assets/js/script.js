@@ -1,5 +1,5 @@
 /* ============================================
-   MAIN JAVASCRIPT FOR HYFUN FOODS
+   MAIN JAVASCRIPT FOR HYFUN FOODS HOME PAGE
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initHoverEffects();
     initSmoothScrolling();
     initParallaxEffect();
-    initLogoData();
     
     console.log('HyFun Foods website loaded successfully!');
 });
@@ -18,117 +17,34 @@ document.addEventListener('DOMContentLoaded', function() {
 function initScrollEffects() {
     const header = document.querySelector('header');
     
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 100) {
-            header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
-            header.style.padding = '5px 0';
-        } else {
-            header.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.08)';
-            header.style.padding = '15px 0';
-        }
-    });
+    if (header) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.style.boxShadow = '0 5px 20px rgba(0, 0, 0, 0.1)';
+                header.style.height = '70px';
+            } else {
+                header.style.boxShadow = '0 10px 30px rgba(0, 0, 0, 0.08)';
+                header.style.height = '80px';
+            }
+        });
+    }
 }
 
 /* Initialize logo scrolling for client and partner sections */
 function initLogoScrolling() {
-    // Client logos track
     const clienteleTrack = document.getElementById('clienteleTrack');
     const partnersTrack = document.getElementById('partnersTrack');
     
-    // Client logos data (from “Our Esteemed Clientele” section of HyFun Foods)
-const clientLogos = [
-    { name: 'Burger King', url: './assets/image/BK.jpg' },
-    { name: 'KFC', url: './assets/images/kfc.png' },
-    { name: 'Pizza Hut', url: './assets/images/pizza-hut.png' },
-    { name: 'Taco Bell', url: './assets/images/ TACOBELL.png' },
-    { name: 'Subway', url: './assets/images/subway.png' },
-    { name: 'pvr', url: './assets/images/pvr.png' },
-    { name: 'carls', url: './assets/images/CARLS.png' },
-    { name: 'WHATABURGER', url: './assets/images/WHATABURGER.png' }
-];
-
-// Partner logos data (from “Our Retail Partners” section of HyFun Foods)
-const partnerLogos = [
-    { name: 'Walmart', url: './assets/images/walmart.png' },
-    { name: 'Woolworths', url: './assets/images/woolworths.png' },
-    { name: 'Reliance', url: './assets/images/reliance.png' },
-    { name: 'D Mart', url: './assets/images/dmart.png' },
-    { name: 'SPAR', url: './assets/images/spar.png' },
-    { name: 'Spencers', url: './assets/images/spencers.png' },
-    { name: 'BigBasket', url: './assets/images/bigbasket.png' },
-    { name: 'Blinkit', url: './assets/images/blinkit.png' }
-];
-
-    
-    // Create logo elements for clientele
-    clientLogos.forEach(logo => {
-        const logoItem = createLogoItem(logo);
-        clienteleTrack.appendChild(logoItem.cloneNode(true));
-        // Duplicate for seamless scrolling
-        clienteleTrack.appendChild(logoItem.cloneNode(true));
-    });
-    
-    // Create logo elements for partners
-    partnerLogos.forEach(logo => {
-        const logoItem = createLogoItem(logo);
-        partnersTrack.appendChild(logoItem.cloneNode(true));
-        // Duplicate for seamless scrolling
-        partnersTrack.appendChild(logoItem.cloneNode(true));
-    });
-    
-    // Initialize scroll controls
-    setupScrollControls('clientele', clienteleTrack);
-    setupScrollControls('partners', partnersTrack);
-}
-
-/* Create individual logo item */
-function createLogoItem(logoData) {
-    const logoItem = document.createElement('div');
-    logoItem.className = 'logo-scroll-item';
-    logoItem.innerHTML = `
-        <img src="${logoData.url}" alt="${logoData.name}" class="client-logo">
-    `;
-    
-    // Add hover effect
-    logoItem.addEventListener('mouseenter', () => {
-        logoItem.style.transform = 'translateY(-10px)';
-    });
-    
-    logoItem.addEventListener('mouseleave', () => {
-        logoItem.style.transform = 'translateY(0)';
-    });
-    
-    return logoItem;
-}
-
-/* Setup scroll controls for logo sections */
-function setupScrollControls(sectionId, track) {
-    const prevBtn = document.getElementById(`${sectionId}Prev`);
-    const nextBtn = document.getElementById(`${sectionId}Next`);
-    
-    if (!prevBtn || !nextBtn) return;
-    
-    const scrollAmount = 220; // Width of logo item + gap
-    
-    prevBtn.addEventListener('click', () => {
-        track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-    });
-    
-    nextBtn.addEventListener('click', () => {
-        track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-    });
-    
-    // Add keyboard navigation
-    track.setAttribute('tabindex', '0');
-    track.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') {
-            track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-            e.preventDefault();
-        } else if (e.key === 'ArrowRight') {
-            track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-            e.preventDefault();
+    // Duplicate logos for seamless scrolling
+    function duplicateLogos(track) {
+        if (track) {
+            const logos = track.innerHTML;
+            track.innerHTML += logos;
         }
-    });
+    }
+    
+    if (clienteleTrack) duplicateLogos(clienteleTrack);
+    if (partnersTrack) duplicateLogos(partnersTrack);
 }
 
 /* Initialize hover effects on cards */
@@ -147,7 +63,7 @@ function initHoverEffects() {
         });
         
         card.addEventListener('mouseleave', () => {
-            card.style.transform = 'scale(1)';
+            card.style.transform = '';
         });
     });
 }
@@ -163,19 +79,14 @@ function initSmoothScrolling() {
             
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
-                const headerHeight = document.querySelector('header').offsetHeight;
+                const header = document.querySelector('header');
+                const headerHeight = header ? header.offsetHeight : 0;
                 const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
                 
                 window.scrollTo({
                     top: targetPosition,
                     behavior: 'smooth'
                 });
-                
-                // Close mobile menu if open
-                const mobileMenu = document.getElementById('mobileMenuContent');
-                if (mobileMenu.classList.contains('active')) {
-                    closeMobileMenu();
-                }
             }
         });
     });
@@ -195,20 +106,6 @@ function initParallaxEffect() {
     });
 }
 
-/* Initialize logo data loading */
-function initLogoData() {
-    // You can add API calls here to load logo data dynamically
-    console.log('Logo data initialized');
-    
-    // Example of loading additional data
-    setTimeout(() => {
-        console.log('All content loaded successfully');
-        
-        // Add loading animation removal if needed
-        document.body.classList.add('loaded');
-    }, 500);
-}
-
 /* Handle window resize */
 window.addEventListener('resize', function() {
     // Adjust logo scrolling on resize
@@ -216,11 +113,10 @@ window.addEventListener('resize', function() {
 });
 
 function adjustLogoScrolling() {
-    // You can add responsive adjustments here
     const tracks = document.querySelectorAll('.logos-track');
+    const isMobile = window.innerWidth < 768;
     
     tracks.forEach(track => {
-        const isMobile = window.innerWidth < 768;
         if (isMobile) {
             track.style.animationDuration = '20s';
         } else {

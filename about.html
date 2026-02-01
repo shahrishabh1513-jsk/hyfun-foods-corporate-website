@@ -37,10 +37,10 @@
         <nav class="mobile-nav">
             <ul>
                 <li><a href="index.html" class="mobile-nav-link">Home</a></li>
-                <li class="mobile-dropdown">
+                <li class="mobile-dropdown active">
                     <a href="about.html" class="mobile-nav-link">About Us <i class="fas fa-chevron-down"></i></a>
                     <div class="mobile-dropdown-content">
-                        <a href="#our-culture">Our Culture</a>
+                        <a href="culture.html">Our Culture</a>
                     </div>
                 </li>
                 <li class="mobile-dropdown">
@@ -52,8 +52,8 @@
                         <a href="#skin-on-fries">Skin on Fries</a>
                     </div>
                 </li>
-                <li><a href="#seedtoshelf" class="mobile-nav-link">Seed to Shelf</a></li>
-                <li><a href="#exports" class="mobile-nav-link">Exports</a></li>
+                <li><a href="seedtoshelf.html" class="mobile-nav-link">Seed to Shelf</a></li>
+                <li><a href="Exports.html" class="mobile-nav-link">Exports</a></li>
                 <li><a href="#recipes" class="mobile-nav-link">Recipes</a></li>
             </ul>
         </nav>
@@ -70,10 +70,10 @@
             <nav class="desktop-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="about.html">About Us <i class="fas fa-chevron-down"></i></a>
                         <div class="dropdown-content">
-                            <a href="#our-culture">Our Culture</a>
+                            <a href="culture.html">Our Culture</a>
                         </div>
                     </li>
                     <li class="dropdown">
@@ -85,242 +85,331 @@
                             <a href="#skin-on-fries">Skin on Fries</a>
                         </div>
                     </li>
-                    <li><a href="#seedtoshelf">Seed to Shelf</a></li>
-                    <li><a href="#exports">Exports</a></li>
+                    <li><a href="seedtoshelf.html">Seed to Shelf</a></li>
+                    <li><a href="Exports.html">Exports</a></li>
                     <li><a href="#recipes">Recipes</a></li>
                 </ul>
             </nav>
-            <div class="cart-account">
-                <a href="#cart" title="Cart"><i class="fas fa-shopping-cart"></i></a>
-                <a href="#account" title="My Account"><i class="fas fa-user-circle"></i></a>
-            </div>
         </div>
     </header>
 
-<!-- Main Legacy Hero Section -->
-<!-- Compact Legacy Hero Section -->
-<section class="about-hero section-bg">
-    <div class="bg-pattern"></div>
-    <div class="container">
-        <div class="about-hero-content">
-            <h1>A LEGACY OF PREMIUM QUALITY AND GREAT TASTE</h1>
-            <p class="subtitle">Serving Excellence Since 1962</p>
-            
-            <div class="legacy-stats">
-                <div class="legacy-stat">
-                    <h3>45+</h3>
-                    <p>Countries</p>
+    <!-- Unique Hero Section with Timeline Badges -->
+    <section class="hero section-bg" id="about-hero">
+        <div class="bg-pattern"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>A LEGACY OF PREMIUM QUALITY AND GREAT TASTE</h1>
+                <p>Serving Excellence Since 1962. From a humble beginning to a global leader in potato snacks, our journey is built on quality, innovation, and customer trust.</p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <h3>60+</h3>
+                        <p>Years Legacy</p>
+                    </div>
+                    <div class="hero-stat">
+                        <h3>45+</h3>
+                        <p>Countries</p>
+                    </div>
+                    <div class="hero-stat">
+                        <h3>Global</h3>
+                        <p>Standards</p>
+                    </div>
                 </div>
-                <div class="legacy-stat">
-                    <h3>60+</h3>
-                    <p>Years Legacy</p>
+                <div class="hero-buttons">
+                    <a href="#journey" class="btn">Our Journey</a>
+                    <a href="#mission" class="btn btn-outline">Our Values</a>
                 </div>
-                <div class="legacy-stat">
-                    <h3>Global</h3>
-                    <p>Standards</p>
+            </div>
+            <div class="hero-image">
+                <div class="timeline-hero-container">
+                    <div class="timeline-point point-1">
+                        <div class="point-year">1962</div>
+                        <div class="point-text">Founded as M/s. Asandas & Sons</div>
+                    </div>
+                    <div class="timeline-point point-2">
+                        <div class="point-year">2015</div>
+                        <div class="point-text">HyFun Established</div>
+                    </div>
+                    <div class="timeline-point point-3">
+                        <div class="point-year">2023</div>
+                        <div class="point-text">Global Leader</div>
+                    </div>
+                    <div class="hero-timeline-line"></div>
+                    <img src="./assets/image/hyfun_food1.png" alt="HyFun Legacy" class="timeline-hero-img">
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Legacy Content Section -->
-<section class="legacy-section section-bg" id="legacy">
-    <div class="bg-pattern bg-pattern-2"></div>
-    <div class="container">
-        <div class="legacy-container">
-            <div class="legacy-header">
-                <h2>Our Legacy Story</h2>
+    <!-- Story Timeline Section (Circular Layout based on image) -->
+    <section class="story-timeline section-bg" id="journey">
+        <div class="bg-pattern bg-pattern-2"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Journey Through Time</h2>
+                <p>From humble beginnings to global excellence - a timeline of our growth and achievements</p>
+                <div class="title-accent"></div>
             </div>
             
-            <div class="legacy-content">
-                <p>In 1962, the first generation of entrepreneurs at <strong>M/s. Asandas & Sons</strong> began the trading of Potatoes and Onions. The second generation further expanded the business and by November 2015, the third generation, Mr. Haresh Karamchandani set up HyFun to produce a variety of delicacies such as French Fries, Burger Patties, Cheese Poppers etc. In a short span of 5 years HyFun became one of the most valued B2B player, catering to leading global QSR brands.</p>
-                
-                <p>HyFun is a proud contributor to the <strong>'Make in India'</strong> initiative. Today we export our products to more than 45 countries across the globe. We can proudly claim that we are an <strong>'Indian Company with Global Standards'</strong>.</p>
-                
-                <p>Our persistent passion for delivering international quality food has brought us even closer to our consumers. Having successfully launched our products in the retail market, we are now expanding our presence on B2C platforms. We aim to democratize our delicacies, which are made from international quality ingredients and suited to the Indian palate.</p>
-            </div>
-            
-            <div class="legacy-divider"></div>
-            
-            <!-- Journey Roadmap Section -->
-            <div class="journey-section">
-                <div class="section-title">
-                    <h2>A JOURNEY OF CREATING PREMIUM AND SUPERIOR QUALITY SNACKS</h2>
+            <div class="circular-timeline">
+                <!-- Center Card -->
+                <div class="center-story">
+                    <h3>Our Story</h3>
+                    <p>Three generations of excellence</p>
+                    <div class="story-icon">
+                        <i class="fas fa-history"></i>
+                    </div>
                 </div>
                 
-                <div class="roadmap-grid">
-                    <div class="roadmap-item">
-                        <div class="year-badge">2020</div>
+                <!-- Timeline Items placed in circular arrangement -->
+                <div class="timeline-item item-1">
+                    <div class="timeline-card">
+                        <div class="year-badge">1962</div>
+                        <h4>The Beginning</h4>
+                        <p>M/s. Asandas & Sons began trading Potatoes and Onions</p>
+                        <div class="timeline-connector"></div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item item-2">
+                    <div class="timeline-card">
+                        <div class="year-badge">2015</div>
+                        <h4>HyFun Born</h4>
+                        <p>Mr. Haresh Karamchandani established HyFun Foods</p>
+                        <div class="timeline-connector"></div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item item-3">
+                    <div class="timeline-card">
+                        <div class="year-badge">2018</div>
                         <h4>Global Expansion</h4>
-                        <p>Expanded to 30+ countries with premium quality snacks</p>
+                        <p>Started exporting to 20+ countries worldwide</p>
+                        <div class="timeline-connector"></div>
                     </div>
-                    
-                    <div class="roadmap-item">
+                </div>
+                
+                <div class="timeline-item item-4">
+                    <div class="timeline-card">
                         <div class="year-badge">2021</div>
-                        <h4>Quality Certification</h4>
-                        <p>Achieved international quality certifications and standards</p>
+                        <h4>Quality Certified</h4>
+                        <p>Achieved international quality certifications</p>
+                        <div class="timeline-connector"></div>
                     </div>
-                    
-                    <div class="roadmap-item">
-                        <div class="year-badge">2022</div>
-                        <h4>Product Innovation</h4>
-                        <p>Launched new product lines and innovative snack varieties</p>
-                    </div>
-                    
-                    <div class="roadmap-item">
+                </div>
+                
+                <div class="timeline-item item-5">
+                    <div class="timeline-card">
                         <div class="year-badge">2023</div>
-                        <h4>Sustainability Focus</h4>
-                        <p>Implemented green practices and sustainable manufacturing</p>
+                        <h4>Market Leader</h4>
+                        <p>Became leading B2B player for global QSR brands</p>
+                        <div class="timeline-connector"></div>
                     </div>
-                    
-                    <div class="roadmap-item">
-                        <div class="year-badge">2024</div>
-                        <h4>Retail Expansion</h4>
-                        <p>Expanded B2C presence across major retail chains</p>
-                    </div>
-                    
-                    <div class="roadmap-item">
-                        <div class="year-badge">2025</div>
-                        <h4>Future Vision</h4>
-                        <p>Continuing innovation and global market leadership</p>
+                </div>
+                
+                <div class="timeline-item item-6">
+                    <div class="timeline-card">
+                        <div class="year-badge">Future</div>
+                        <h4>Continued Innovation</h4>
+                        <p>Expanding B2C presence and new product lines</p>
+                        <div class="timeline-connector"></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Mission & Vision Section -->
-<section class="mission-section section-bg" id="mission">
-    <div class="bg-pattern bg-pattern-3"></div>
-    <div class="container">
-        <div class="section-title">
-            <h2>Our Guiding Principles</h2>
-        </div>
-
-        <div class="mission-vision-container">
-            <div class="mission-box">
-                <div class="mission-header">
-                    <div class="mission-icon">
+    <!-- Mission & Vision in Card Grid -->
+    <section class="mission-vision section-bg" id="mission">
+        <div class="bg-pattern bg-pattern-3"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Core Principles</h2>
+                <p>Guided by strong values that shape everything we do</p>
+                <div class="title-accent"></div>
+            </div>
+            
+            <div class="principles-grid">
+                <div class="principle-card mission-card">
+                    <div class="card-icon">
                         <i class="fas fa-bullseye"></i>
                     </div>
-                    <h3>MISSION</h3>
-                </div>
-                <div class="mission-content">
-                    <p>To exceed our customer's expectations by striving to bring premium quality, pocket friendly products in the market by continuously undertaking innovative practices and improving safety measures in manufacturing, processing and supply.</p>
-                </div>
-            </div>
-
-            <div class="vision-box">
-                <div class="vision-header">
-                    <div class="vision-icon">
-                        <i class="fas fa-eye"></i>
-                    </div>
-                    <h3>VISION</h3>
-                </div>
-                <div class="vision-content">
-                    <p>To have an extensive worldwide presence while maintaining global quality standards by adapting innovative modern techniques and building a brand that is acknowledged by client's faith for many years to come.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Values & Sustainability Section -->
-        <div class="values-section">
-            <div class="values-container">
-                <div class="values-header">
-                    <h2>Values and SUSTAINABILITY</h2>
+                    <h3>Our Mission</h3>
+                    <p>To exceed customer expectations by bringing premium quality, pocket-friendly products through innovative practices and improved safety measures in manufacturing and supply.</p>
+                    <div class="card-tag">Purpose</div>
                 </div>
                 
-                <div class="values-content">
-                    <p>At HyFun, the potatoes we process are procured through contract farming model. From farmers to customers, we believe in creating maximum value at every step of the value chain. Our strategy is built around producing good quality potatoes while progressing hand in hand with our farmers.</p>
+                <div class="principle-card vision-card">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3>Our Vision</h3>
+                    <p>To achieve extensive worldwide presence while maintaining global quality standards through innovative techniques and building a brand acknowledged by client's faith for years to come.</p>
+                    <div class="card-tag">Aspiration</div>
+                </div>
+                
+                <div class="principle-card values-card">
+                    <div class="card-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>Our Values</h3>
+                    <p>Quality Excellence, Customer Focus, Innovation, Sustainability, Farmer Welfare, and Ethical Business Practices guide every decision we make.</p>
+                    <div class="card-tag">Foundation</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legacy Story in Side-by-Side Layout -->
+    <section class="legacy-story section-bg">
+        <div class="bg-pattern"></div>
+        <div class="container">
+            <div class="legacy-content-wrapper">
+                <div class="legacy-image">
+                    <img src="./assets/image/hyfun_food1.png" alt="HyFun Legacy" class="legacy-img">
+                    <div class="image-badge">
+                        <i class="fas fa-award"></i>
+                        <span>Make in India Initiative</span>
+                    </div>
+                </div>
+                
+                <div class="legacy-text">
+                    <h2>The HyFun Legacy</h2>
+                    <div class="accent-line"></div>
+                    <p>HyFun is a proud contributor to the <strong>'Make in India'</strong> initiative. Today we export our products to more than 45 countries across the globe. We can proudly claim that we are an <strong>'Indian Company with Global Standards'</strong>.</p>
                     
-                    <p>We employ International Agro Experts to train our farmers to keep their farming practices at par with global standards. This guarantees us a productive yield which keeps us self-sustained throughout the year and enables us to give them assured returns.</p>
+                    <p>Our persistent passion for delivering international quality food has brought us even closer to our consumers. Having successfully launched our products in the retail market, we are now expanding our presence on B2C platforms.</p>
                     
-                    <div class="values-highlights">
-                        <div class="value-highlight">
-                            <h4>Contract Farming</h4>
-                            <p>Working directly with farmers for quality produce</p>
+                    <div class="legacy-highlights">
+                        <div class="highlight">
+                            <i class="fas fa-globe-asia"></i>
+                            <div>
+                                <h4>Global Presence</h4>
+                                <p>45+ countries served</p>
+                            </div>
                         </div>
-                        <div class="value-highlight">
-                            <h4>Global Standards</h4>
-                            <p>International expertise and quality benchmarks</p>
+                        <div class="highlight">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Farmers First</h4>
+                                <p>Contract farming model</p>
+                            </div>
                         </div>
-                        <div class="value-highlight">
-                            <h4>Farmer Welfare</h4>
-                            <p>Assured returns and sustainable partnerships</p>
+                        <div class="highlight">
+                            <i class="fas fa-leaf"></i>
+                            <div>
+                                <h4>Sustainable</h4>
+                                <p>Green practices implemented</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Green Practices Section -->
-<section class="green-section section-bg" id="green">
-    <div class="bg-pattern bg-pattern-2"></div>
-    <div class="container">
-        <div class="section-title">
-            <h2>GREEN Practices</h2>
-            <p>At HyFun we commit to environment positive practices in all our operations and in everyday actions. We have a clear roadmap that ties business intelligence with green initiatives.</p>
-        </div>
-
-        <div class="green-practices">
-            <div class="green-intro">
-                <h3>POLLUTION Control NORMS</h3>
-                <p>We implement strict environmental standards across all our facilities to ensure sustainable operations and minimal environmental impact.</p>
+    <!-- Green Practices Section -->
+    <section class="green-practices section-bg" id="green">
+        <div class="bg-pattern bg-pattern-2"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Green Commitment</h2>
+                <p>Implementing environment-positive practices across all operations</p>
+                <div class="title-accent"></div>
             </div>
-
-            <div class="green-grid">
-                <div class="green-card">
+            
+            <div class="green-practices-grid">
+                <div class="green-practice-card">
                     <div class="green-icon">
                         <i class="fas fa-tint-slash"></i>
                     </div>
-                    <h4>ZERO LIQUID DISCHARGE</h4>
-                    <p>Implementing advanced water treatment systems to ensure no liquid waste is discharged into the environment, protecting our water resources.</p>
+                    <h4>Zero Liquid Discharge</h4>
+                    <p>Advanced water treatment systems ensuring no environmental discharge</p>
                 </div>
-
-                <div class="green-card">
+                
+                <div class="green-practice-card">
                     <div class="green-icon">
                         <i class="fas fa-cloud-rain"></i>
                     </div>
-                    <h4>Rain water Harvesting</h4>
-                    <p>Comprehensive rainwater harvesting systems across all our facilities to conserve water resources and maintain sustainable water management.</p>
+                    <h4>Rainwater Harvesting</h4>
+                    <p>Comprehensive systems for sustainable water management</p>
                 </div>
-
-                <div class="green-card">
+                
+                <div class="green-practice-card">
                     <div class="green-icon">
                         <i class="fas fa-tree"></i>
                     </div>
-                    <h4>GREEN SURROUNDING</h4>
-                    <p>Maintaining lush green landscapes and implementing extensive plantation drives around our facilities to promote biodiversity and clean air.</p>
+                    <h4>Green Surroundings</h4>
+                    <p>Lush landscapes and biodiversity promotion</p>
+                </div>
+                
+                <div class="green-practice-card">
+                    <div class="green-icon">
+                        <i class="fas fa-recycle"></i>
+                    </div>
+                    <h4>Waste Management</h4>
+                    <p>Efficient recycling and waste reduction systems</p>
+                </div>
+                
+                <div class="green-practice-card">
+                    <div class="green-icon">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <h4>Energy Efficient</h4>
+                    <p>Optimized energy consumption and renewable energy use</p>
+                </div>
+                
+                <div class="green-practice-card">
+                    <div class="green-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h4>Sustainable Farming</h4>
+                    <p>Eco-friendly agricultural practices with farmers</p>
                 </div>
             </div>
+            
+            <div class="green-commitment">
+                <h3>Our Sustainability Promise</h3>
+                <p>At HyFun, we commit to environment positive practices in all our operations and in everyday actions. We have a clear roadmap that ties business intelligence with green initiatives for a better tomorrow.</p>
+            </div>
+        </div>
+    </section>
 
-            <div class="social-connect">
-                <h3>FOLLOW US on</h3>
-                <div class="social-icons">
-                    <a href="#" class="social-icon">
-                        <i class="fab fa-facebook-f"></i>
+    <!-- Connect Section -->
+    <section class="connect-section section-bg">
+        <div class="bg-pattern bg-pattern-3"></div>
+        <div class="container">
+            <div class="connect-content">
+                <h2>Join Our Journey</h2>
+                <p>Be part of our story as we continue to bring premium potato snacks to the world</p>
+                
+                <div class="connect-options">
+                    <a href="#careers" class="connect-option">
+                        <i class="fas fa-briefcase"></i>
+                        <h4>Careers</h4>
+                        <p>Join our growing team</p>
                     </a>
-                    <a href="#" class="social-icon">
-                        <i class="fab fa-twitter"></i>
+                    
+                    <a href="#partnerships" class="connect-option">
+                        <i class="fas fa-handshake"></i>
+                        <h4>Partnerships</h4>
+                        <p>Collaborate with us</p>
                     </a>
-                    <a href="#" class="social-icon">
-                        <i class="fab fa-instagram"></i>
+                    
+                    <a href="#contact" class="connect-option">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Contact</h4>
+                        <p>Get in touch</p>
                     </a>
-                    <a href="#" class="social-icon">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="#" class="social-icon">
-                        <i class="fab fa-youtube"></i>
+                    
+                    <a href="#follow" class="connect-option">
+                        <i class="fas fa-share-alt"></i>
+                        <h4>Follow Us</h4>
+                        <p>Stay updated</p>
                     </a>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Footer -->
     <footer id="connect">
@@ -339,9 +428,10 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
+                        <li><a href="seedtoshelf.html">seed to shelf</a></li>
                         <li><a href="#products">Products</a></li>
-                        <li><a href="#events">News & Events</a></li>
-                        <li><a href="#recipes">Recipes</a></li>
+                        <li><a href="Exports.html">Exports</a></li>
+                        <li><a href="Recipes.html">Recipes</a></li>
                         <li><a href="#connect">Connect With Us</a></li>
                     </ul>
                 </div>
@@ -349,8 +439,7 @@
                     <h3>Contact Info</h3>
                     <div class="contact-info">
                         <p><i class="fas fa-building"></i> <strong>Corporate Office:</strong> HyFun Foods HQ</p>
-                        <p><i class="fas fa-industry"></i> <strong>Production Unit:</strong> State-of-the-art facilities
-                        </p>
+                        <p><i class="fas fa-industry"></i> <strong>Production Unit:</strong> State-of-the-art facilities</p>
                         <p><i class="fas fa-chart-line"></i> <strong>Sales & Marketing:</strong> Global reach</p>
                         <p><i class="fas fa-envelope"></i> sales@hyfunfoods.com</p>
                         <p><i class="fas fa-envelope"></i> info@hyfunfoods.com</p>
@@ -375,9 +464,8 @@
         </div>
     </footer>
 
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/mobile-menu.js"></script>
     <script src="./assets/js/about.js"></script>
+    <script src="./assets/js/mobile-menu.js"></script>
 </body>
 
 </html>

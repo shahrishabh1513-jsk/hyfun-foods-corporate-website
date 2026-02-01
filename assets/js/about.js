@@ -1,44 +1,257 @@
 /* ============================================
-   UPDATED ABOUT PAGE JAVASCRIPT
-   With new features for screenshot design
+   ENHANCED ABOUT PAGE JAVASCRIPT
+   With circular timeline animations
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all about page functionality
-    initHeroBadges();
-    initTimelineDots();
-    initHighlightItems();
-    initMissionCards();
-    initJourneyTimeline();
+    initAboutHero();
+    initCircularTimeline();
+    initPrincipleCards();
     initGreenPractices();
-    initActiveNavigation();
-    initStatsCounter();
+    initConnectOptions();
     initSmoothScrolling();
-    initScrollAnimations();
     
     console.log('About page loaded successfully!');
 });
 
-/* Initialize hero badges animation */
-function initHeroBadges() {
-    const heroBadges = document.querySelectorAll('.hero-badge');
+/* Initialize about hero section */
+function initAboutHero() {
+    const heroStats = document.querySelectorAll('.hero-stat');
     
-    heroBadges.forEach((badge, index) => {
+    heroStats.forEach((stat, index) => {
+        stat.style.animationDelay = `${index * 0.2}s`;
+        stat.classList.add('fade-in-up');
+    });
+    
+    const timelinePoints = document.querySelectorAll('.timeline-point');
+    timelinePoints.forEach((point, index) => {
+        point.style.animationDelay = `${index * 0.3}s`;
+        point.classList.add('fade-in-up');
+    });
+}
+
+/* Initialize circular timeline animation */
+function initCircularTimeline() {
+    const timelineCards = document.querySelectorAll('.timeline-card');
+    
+    timelineCards.forEach((card, index) => {
         // Add animation delay for staggered appearance
-        badge.style.animationDelay = `${index * 0.2}s`;
-        badge.classList.add('fade-in-up');
+        card.style.animationDelay = `${index * 0.2}s`;
+        card.classList.add('fade-in-up');
         
-        // Add hover effect
-        badge.addEventListener('mouseenter', function() {
-            const icon = this.querySelector('.badge-icon');
+        // Add interactive hover effects
+        card.addEventListener('mouseenter', function() {
+            const yearBadge = this.querySelector('.year-badge');
+            if (yearBadge) {
+                yearBadge.style.transform = 'scale(1.1) rotate(5deg)';
+                yearBadge.style.transition = 'transform 0.3s ease';
+            }
+            
+            // Highlight connector line
+            const connector = this.querySelector('.timeline-connector');
+            if (connector) {
+                connector.style.width = '60px';
+                connector.style.background = 'linear-gradient(90deg, var(--green), var(--blue))';
+            }
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            const yearBadge = this.querySelector('.year-badge');
+            if (yearBadge) {
+                yearBadge.style.transform = 'scale(1) rotate(0deg)';
+            }
+            
+            // Reset connector line
+            const connector = this.querySelector('.timeline-connector');
+            if (connector) {
+                connector.style.width = '40px';
+                connector.style.background = 'linear-gradient(90deg, var(--green), var(--blue))';
+            }
+        });
+        
+        // Add click effect to show year details
+        card.addEventListener('click', function() {
+            const year = this.querySelector('.year-badge').textContent;
+            const title = this.querySelector('h4').textContent;
+            const description = this.querySelector('p').textContent;
+            
+            showTimelineDetail(year, title, description);
+        });
+    });
+    
+    // Center story animation
+    const centerStory = document.querySelector('.center-story');
+    if (centerStory) {
+        centerStory.classList.add('fade-in-up');
+        centerStory.style.animationDelay = '0.5s';
+        
+        centerStory.addEventListener('mouseenter', function() {
+            const icon = this.querySelector('.story-icon');
+            if (icon) {
+                icon.style.transform = 'scale(1.2) rotate(360deg)';
+                icon.style.transition = 'transform 0.5s ease';
+            }
+        });
+        
+        centerStory.addEventListener('mouseleave', function() {
+            const icon = this.querySelector('.story-icon');
+            if (icon) {
+                icon.style.transform = 'scale(1) rotate(0deg)';
+            }
+        });
+    }
+}
+
+/* Show timeline detail overlay */
+function showTimelineDetail(year, title, description) {
+    // Create or update detail overlay
+    let detailOverlay = document.getElementById('timeline-detail-overlay');
+    
+    if (!detailOverlay) {
+        detailOverlay = document.createElement('div');
+        detailOverlay.id = 'timeline-detail-overlay';
+        detailOverlay.className = 'timeline-detail-overlay';
+        document.body.appendChild(detailOverlay);
+        
+        // Add CSS for overlay
+        const style = document.createElement('style');
+        style.textContent = `
+            .timeline-detail-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.8);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 9999;
+                opacity: 0;
+                animation: fadeIn 0.3s forwards;
+            }
+            
+            .timeline-detail-content {
+                background: white;
+                padding: 40px;
+                border-radius: var(--border-radius);
+                max-width: 500px;
+                width: 90%;
+                text-align: center;
+                position: relative;
+                transform: translateY(20px);
+                animation: slideUp 0.3s forwards 0.1s;
+            }
+            
+            .timeline-detail-year {
+                background: linear-gradient(135deg, var(--green), var(--blue));
+                color: white;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto 20px;
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+            
+            .timeline-detail-title {
+                font-size: 1.8rem;
+                margin-bottom: 15px;
+                color: var(--text-main);
+            }
+            
+            .timeline-detail-description {
+                color: var(--text-muted);
+                line-height: 1.6;
+                margin-bottom: 25px;
+            }
+            
+            .close-timeline-detail {
+                background: var(--green);
+                color: white;
+                border: none;
+                padding: 10px 25px;
+                border-radius: 25px;
+                cursor: pointer;
+                font-weight: 600;
+                transition: var(--transition);
+            }
+            
+            .close-timeline-detail:hover {
+                background: var(--blue);
+                transform: translateY(-2px);
+            }
+            
+            @keyframes fadeIn {
+                to { opacity: 1; }
+            }
+            
+            @keyframes slideUp {
+                to { transform: translateY(0); }
+            }
+            
+            @keyframes fadeOut {
+                to { opacity: 0; }
+            }
+        `;
+        document.head.appendChild(style);
+    }
+    
+    // Update content
+    detailOverlay.innerHTML = `
+        <div class="timeline-detail-content">
+            <div class="timeline-detail-year">${year}</div>
+            <h3 class="timeline-detail-title">${title}</h3>
+            <p class="timeline-detail-description">${description}</p>
+            <button class="close-timeline-detail">Close</button>
+        </div>
+    `;
+    
+    // Show overlay
+    detailOverlay.style.display = 'flex';
+    
+    // Close button functionality
+    const closeBtn = detailOverlay.querySelector('.close-timeline-detail');
+    closeBtn.addEventListener('click', function() {
+        detailOverlay.style.animation = 'fadeOut 0.3s forwards';
+        setTimeout(() => {
+            detailOverlay.style.display = 'none';
+        }, 300);
+    });
+    
+    // Close on overlay click
+    detailOverlay.addEventListener('click', function(e) {
+        if (e.target === this) {
+            detailOverlay.style.animation = 'fadeOut 0.3s forwards';
+            setTimeout(() => {
+                detailOverlay.style.display = 'none';
+            }, 300);
+        }
+    });
+}
+
+/* Initialize principle cards interaction */
+function initPrincipleCards() {
+    const principleCards = document.querySelectorAll('.principle-card');
+    
+    principleCards.forEach((card, index) => {
+        card.style.animationDelay = `${index * 0.2}s`;
+        card.classList.add('fade-in-up');
+        
+        card.addEventListener('mouseenter', function() {
+            const icon = this.querySelector('.card-icon');
             if (icon) {
                 icon.style.transform = 'scale(1.1) rotate(5deg)';
                 icon.style.transition = 'transform 0.3s ease';
             }
         });
         
-        badge.addEventListener('mouseleave', function() {
-            const icon = this.querySelector('.badge-icon');
+        card.addEventListener('mouseleave', function() {
+            const icon = this.querySelector('.card-icon');
             if (icon) {
                 icon.style.transform = 'scale(1) rotate(0deg)';
             }
@@ -46,256 +259,66 @@ function initHeroBadges() {
     });
 }
 
-/* Initialize timeline dot interactions */
-function initTimelineDots() {
-    const timelineDots = document.querySelectorAll('.timeline-dot');
-    const timelineYears = {
-        '1962': 'First generation begins trading of Potatoes and Onions under M/s. Asandas & Sons',
-        '1990': 'Second generation expands business operations and market reach',
-        '2015': 'Third generation, Mr. Haresh Karamchandani establishes HyFun Foods',
-        '2020': 'Becomes leading B2B player catering to global QSR brands across 45+ countries',
-        'Present': 'Expanding presence on B2C platforms with focus on Indian market'
-    };
-    
-    timelineDots.forEach(dot => {
-        dot.addEventListener('click', function() {
-            // Remove active class from all dots
-            timelineDots.forEach(d => d.classList.remove('active'));
-            
-            // Add active class to clicked dot
-            this.classList.add('active');
-            
-            // Get the year from data attribute
-            const year = this.getAttribute('data-year');
-            const content = timelineYears[year];
-            
-            // Show year info (you can enhance this with a modal or tooltip)
-            if (content) {
-                console.log(`${year}: ${content}`);
-                
-                // Optional: Show a notification or update a display element
-                const yearDisplay = document.getElementById('year-display');
-                if (yearDisplay) {
-                    yearDisplay.textContent = `${year}: ${content}`;
-                    yearDisplay.style.display = 'block';
-                    setTimeout(() => {
-                        yearDisplay.style.display = 'none';
-                    }, 3000);
-                }
-            }
-            
-            // Add animation effect
-            this.style.transform = 'translateY(-5px)';
-            setTimeout(() => {
-                this.style.transform = '';
-            }, 300);
-        });
-        
-        dot.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateY(-5px)';
-            const year = this.getAttribute('data-year');
-            const content = timelineYears[year];
-            
-            // Optional: Show tooltip
-            if (content) {
-                this.setAttribute('title', content);
-            }
-        });
-        
-        dot.addEventListener('mouseleave', function() {
-            if (!this.classList.contains('active')) {
-                this.style.transform = '';
-            }
-        });
-    });
-    
-    // Set first dot as active by default
-    if (timelineDots.length > 0) {
-        timelineDots[0].classList.add('active');
-    }
-}
-
-/* Initialize highlight items animation */
-function initHighlightItems() {
-    const highlightItems = document.querySelectorAll('.highlight-item');
-    
-    highlightItems.forEach((item, index) => {
-        item.style.animationDelay = `${index * 0.1}s`;
-        item.classList.add('fade-in-up');
-        
-        item.addEventListener('mouseenter', function() {
-            const icon = this.querySelector('.highlight-icon');
-            if (icon) {
-                icon.style.transform = 'scale(1.1) rotate(360deg)';
-                icon.style.transition = 'transform 0.5s ease';
-            }
-        });
-        
-        item.addEventListener('mouseleave', function() {
-            const icon = this.querySelector('.highlight-icon');
-            if (icon) {
-                icon.style.transform = 'scale(1) rotate(0deg)';
-            }
-        });
-    });
-}
-
-/* Initialize mission cards interaction */
-function initMissionCards() {
-    const cards = document.querySelectorAll('.mission-card');
-    
-    cards.forEach(card => {
-        card.addEventListener('mouseenter', () => {
-            const icon = card.querySelector('.mission-icon');
-            if (icon) {
-                icon.style.transform = 'scale(1.1) rotate(5deg)';
-            }
-        });
-        
-        card.addEventListener('mouseleave', () => {
-            const icon = card.querySelector('.mission-icon');
-            if (icon) {
-                icon.style.transform = 'scale(1) rotate(0deg)';
-            }
-        });
-    });
-}
-
-/* Initialize journey timeline interaction */
-function initJourneyTimeline() {
-    const timelineItems = document.querySelectorAll('.timeline-item');
-    
-    timelineItems.forEach((item, index) => {
-        item.style.animationDelay = `${index * 0.2}s`;
-        item.classList.add('fade-in-up');
-        
-        item.addEventListener('mouseenter', () => {
-            item.style.transform = 'translateX(10px)';
-            const year = item.querySelector('.timeline-year');
-            if (year) {
-                year.style.transform = 'scale(1.1)';
-            }
-        });
-        
-        item.addEventListener('mouseleave', () => {
-            item.style.transform = '';
-            const year = item.querySelector('.timeline-year');
-            if (year) {
-                year.style.transform = '';
-            }
-        });
-    });
-}
-
-/* Initialize green practices section */
+/* Initialize green practices interaction */
 function initGreenPractices() {
-    const greenCards = document.querySelectorAll('.green-card');
+    const greenCards = document.querySelectorAll('.green-practice-card');
     
     greenCards.forEach((card, index) => {
         card.style.animationDelay = `${index * 0.1}s`;
         card.classList.add('fade-in-up');
         
-        card.addEventListener('mouseenter', () => {
-            const icon = card.querySelector('.green-icon');
+        card.addEventListener('mouseenter', function() {
+            const icon = this.querySelector('.green-icon');
             if (icon) {
                 icon.style.transform = 'scale(1.1) rotate(360deg)';
                 icon.style.transition = 'transform 0.5s ease';
             }
         });
         
-        card.addEventListener('mouseleave', () => {
-            const icon = card.querySelector('.green-icon');
+        card.addEventListener('mouseleave', function() {
+            const icon = this.querySelector('.green-icon');
             if (icon) {
                 icon.style.transform = 'scale(1) rotate(0deg)';
             }
         });
     });
+}
+
+/* Initialize connect options interaction */
+function initConnectOptions() {
+    const connectOptions = document.querySelectorAll('.connect-option');
     
-    // Social icons interaction
-    const socialIcons = document.querySelectorAll('.social-icon');
-    socialIcons.forEach(icon => {
-        icon.addEventListener('mouseenter', () => {
-            icon.style.transform = 'translateY(-5px) scale(1.1)';
+    connectOptions.forEach(option => {
+        option.addEventListener('mouseenter', function() {
+            const icon = this.querySelector('i');
+            if (icon) {
+                icon.style.transform = 'scale(1.2) rotate(5deg)';
+                icon.style.transition = 'transform 0.3s ease';
+            }
         });
         
-        icon.addEventListener('mouseleave', () => {
-            icon.style.transform = 'translateY(0) scale(1)';
-        });
-        
-        // Add click handler for social links
-        icon.addEventListener('click', (e) => {
-            const href = icon.getAttribute('href');
-            if (!href || href === '#') {
-                e.preventDefault();
-                alert('Social links would be configured with actual URLs in production.');
+        option.addEventListener('mouseleave', function() {
+            const icon = this.querySelector('i');
+            if (icon) {
+                icon.style.transform = 'scale(1) rotate(0deg)';
             }
         });
     });
 }
 
-/* Set active navigation for about page */
-function initActiveNavigation() {
-    const currentPage = window.location.pathname.split('/').pop();
-    
-    if (currentPage === 'about.html' || currentPage === '') {
-        const aboutLinks = document.querySelectorAll('a[href*="about"]');
-        aboutLinks.forEach(link => {
-            if (link.getAttribute('href').includes('about')) {
-                const parent = link.parentElement;
-                if (parent) {
-                    parent.classList.add('active');
-                }
-                
-                // Highlight parent dropdown
-                const dropdown = link.closest('.dropdown, .mobile-dropdown');
-                if (dropdown) {
-                    dropdown.classList.add('active');
-                }
-            }
-        });
-    }
-}
-
-/* Initialize statistics counter animation */
-function initStatsCounter() {
-    const stats = document.querySelectorAll('.stat h3');
-    
-    stats.forEach(stat => {
-        const originalText = stat.textContent;
-        const isNumber = /\d+/.test(originalText);
-        
-        if (isNumber) {
-            const target = parseInt(originalText);
-            let current = 0;
-            const increment = target / 50; // 50 steps over 1 second
-            
-            const counter = setInterval(() => {
-                current += increment;
-                if (current >= target) {
-                    current = target;
-                    clearInterval(counter);
-                    stat.textContent = Math.floor(current) + (originalText.includes('+') ? '+' : '');
-                } else {
-                    stat.textContent = Math.floor(current) + (originalText.includes('+') ? '+' : '');
-                }
-            }, 20);
-        }
-    });
-}
-
-/* Handle smooth scrolling for about page sections */
+/* Initialize smooth scrolling for anchor links */
 function initSmoothScrolling() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
             
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
-                e.preventDefault();
-                
                 const headerHeight = document.querySelector('header').offsetHeight;
-                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight - 20;
+                const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - headerHeight;
                 
                 window.scrollTo({
                     top: targetPosition,
@@ -303,80 +326,16 @@ function initSmoothScrolling() {
                 });
                 
                 // Close mobile menu if open
-                const mobileMenu = document.getElementById('mobileMenuContent');
+                const mobileMenu = document.querySelector('.mobile-menu-content');
                 if (mobileMenu && mobileMenu.classList.contains('active')) {
-                    closeMobileMenu();
+                    mobileMenu.classList.remove('active');
+                    const overlay = document.querySelector('.mobile-menu-overlay');
+                    if (overlay) overlay.classList.remove('active');
+                    document.body.style.overflow = '';
                 }
             }
         });
     });
-}
-
-/* Add scroll animation for elements */
-function initScrollAnimations() {
-    const elements = document.querySelectorAll('.hero-badge, .highlight-item, .mission-card, .timeline-item, .green-card');
-    
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry, index) => {
-            if (entry.isIntersecting) {
-                setTimeout(() => {
-                    entry.target.classList.add('animated');
-                }, index * 100);
-            }
-        });
-    }, {
-        threshold: 0.1,
-        rootMargin: '0px 0px -100px 0px'
-    });
-    
-    elements.forEach(element => {
-        observer.observe(element);
-    });
-}
-
-/* Handle window resize */
-window.addEventListener('resize', function() {
-    adjustAboutLayout();
-});
-
-function adjustAboutLayout() {
-    const aboutHeroContent = document.querySelector('.about-hero-content');
-    const legacyContent = document.querySelector('.legacy-content');
-    
-    if (aboutHeroContent && window.innerWidth < 992) {
-        aboutHeroContent.style.gridTemplateColumns = '1fr';
-    }
-    
-    if (legacyContent && window.innerWidth < 992) {
-        legacyContent.style.gridTemplateColumns = '1fr';
-    }
-}
-
-/* Add intersection observer for hero stats */
-const heroObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            setTimeout(initStatsCounter, 300);
-            heroObserver.unobserve(entry.target);
-        }
-    });
-}, { threshold: 0.5 });
-
-const aboutHero = document.querySelector('.about-hero');
-if (aboutHero) {
-    heroObserver.observe(aboutHero);
-}
-
-/* Helper function to close mobile menu */
-function closeMobileMenu() {
-    const mobileMenuContent = document.getElementById('mobileMenuContent');
-    const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
-    
-    if (mobileMenuContent && mobileMenuOverlay) {
-        mobileMenuContent.classList.remove('active');
-        mobileMenuOverlay.classList.remove('active');
-        document.body.style.overflow = '';
-    }
 }
 
 /* Add CSS for animations */
@@ -394,51 +353,11 @@ aboutStyles.textContent = `
             transform: translateY(0);
         }
     }
-    
-    /* Add smooth transition for all interactive elements */
-    .hero-badge,
-    .timeline-dot,
-    .highlight-item,
-    .mission-card,
-    .timeline-item,
-    .green-card {
-        transition: all 0.3s ease;
-    }
-    
-    /* Year display notification */
-    .year-display {
-        position: fixed;
-        top: 100px;
-        right: 20px;
-        background: linear-gradient(90deg, var(--green), var(--blue));
-        color: white;
-        padding: 15px 20px;
-        border-radius: var(--border-radius);
-        box-shadow: var(--shadow);
-        z-index: 1000;
-        display: none;
-        max-width: 300px;
-        animation: slideInRight 0.3s ease;
-    }
-    
-    @keyframes slideInRight {
-        from { transform: translateX(100%); opacity: 0; }
-        to { transform: translateX(0); opacity: 1; }
-    }
 `;
 document.head.appendChild(aboutStyles);
-
-/* Add year display element */
-const yearDisplay = document.createElement('div');
-yearDisplay.id = 'year-display';
-yearDisplay.className = 'year-display';
-document.body.appendChild(yearDisplay);
 
 /* Initialize on load */
 window.addEventListener('load', function() {
     // Add loaded class for transition effects
     document.body.classList.add('loaded');
-    
-    // Adjust layout initially
-    adjustAboutLayout();
 });
