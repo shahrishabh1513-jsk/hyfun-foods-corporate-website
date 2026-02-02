@@ -1,6 +1,4 @@
-/* ============================================
-   PRODUCTS PAGE JAVASCRIPT
-   ============================================ */
+/* PRODUCTS PAGE JAVASCRIPT */
 
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all products page functionality

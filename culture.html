@@ -1,30 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Culture | HyFun Foods - Where Passion Meets Purpose</title>
+    <title>Our Culture | HyFun Foods</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/css/culture.css">
 </head>
-
 <body>
-    <!-- 3D Background Elements -->
-    <div class="three-d-bg">
-        <div class="floating-shape shape-1"></div>
-        <div class="floating-shape shape-2"></div>
-        <div class="floating-shape shape-3"></div>
-        <div class="floating-shape shape-4"></div>
-        <div class="particles-container" id="particles-js"></div>
-    </div>
-
     <!-- Mobile Menu Button -->
     <div class="mobile-menu-btn" id="mobileMenuBtn">
         <i class="fas fa-bars"></i>
@@ -48,11 +34,10 @@
         <nav class="mobile-nav">
             <ul>
                 <li><a href="index.html" class="mobile-nav-link">Home</a></li>
-                <li class="mobile-dropdown active">
-                    <a href="about.html" class="mobile-nav-link">About Us <i class="fas fa-chevron-down"></i></a>
+                <li class="mobile-dropdown">
+                    <a href="about.html" class="mobile-nav-link active">About Us <i class="fas fa-chevron-down"></i></a>
                     <div class="mobile-dropdown-content">
-                        <a href="culture.html" class="active">Our Culture</a>
-                        <a href="#our-story">Our Story</a>
+                        <a href="culture.html">Our Culture</a>
                     </div>
                 </li>
                 <li class="mobile-dropdown">
@@ -64,9 +49,10 @@
                         <a href="#skin-on-fries">Skin on Fries</a>
                     </div>
                 </li>
-                <li><a href="#seedtoshelf" class="mobile-nav-link">Seed to Shelf</a></li>
-                <li><a href="#exports" class="mobile-nav-link">Exports</a></li>
-                <li><a href="#recipes" class="mobile-nav-link">Recipes</a></li>
+                <li><a href="seedtoshelf.html" class="mobile-nav-link">Seed to Shelf</a></li>
+                <li><a href="Exports.html" class="mobile-nav-link">Exports</a></li>
+                <li><a href="Recipes.html" class="mobile-nav-link">Recipes</a></li>
+                <li><a href="connect.html" class="mobile-nav-link">Connect</a></li>
             </ul>
         </nav>
     </div>
@@ -82,11 +68,10 @@
             <nav class="desktop-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li class="dropdown active">
-                        <a href="about.html">About Us <i class="fas fa-chevron-down"></i></a>
+                    <li class="dropdown">
+                        <a href="about.html" class="active">About Us <i class="fas fa-chevron-down"></i></a>
                         <div class="dropdown-content">
-                            <a href="culture.html" class="active">Our Culture</a>
-                            <a href="#our-story">Our Story</a>
+                            <a href="culture.html">Our Culture</a>
                         </div>
                     </li>
                     <li class="dropdown">
@@ -98,440 +83,414 @@
                             <a href="#skin-on-fries">Skin on Fries</a>
                         </div>
                     </li>
-                    <li><a href="#seedtoshelf">Seed to Shelf</a></li>
-                    <li><a href="#exports">Exports</a></li>
-                    <li><a href="#recipes">Recipes</a></li>
+                    <li><a href="seedtoshelf.html">Seed to Shelf</a></li>
+                    <li><a href="Exports.html">Exports</a></li>
+                    <li><a href="Recipes.html">Recipes</a></li>
+                    <li><a href="connect.html">Connect</a></li>
                 </ul>
             </nav>
-            <div class="cart-account">
-                <a href="#cart" title="Cart"><i class="fas fa-shopping-cart"></i></a>
-                <a href="#account" title="My Account"><i class="fas fa-user-circle"></i></a>
-            </div>
         </div>
     </header>
 
-    <!-- Animated Culture Hero Section -->
-    <section class="culture-hero-3d">
-        <div class="hero-3d-container">
-            <div class="floating-potatoes">
-                <div class="potato potato-1" data-speed="0.1"></div>
-                <div class="potato potato-2" data-speed="0.15"></div>
-                <div class="potato potato-3" data-speed="0.2"></div>
-                <div class="potato potato-4" data-speed="0.12"></div>
-            </div>
-            
-            <div class="container">
-                <div class="culture-hero-content-3d">
-                    <div class="title-3d-wrapper">
-                        <h1 class="title-3d animate__animated animate__fadeInDown">
-                            <span class="letter" data-letter="O">O</span>
-                            <span class="letter" data-letter="u">u</span>
-                            <span class="letter" data-letter="r">r</span>
-                            <span class="letter" data-letter="&nbsp;"></span>
-                            <span class="letter" data-letter="C">C</span>
-                            <span class="letter" data-letter="u">u</span>
-                            <span class="letter" data-letter="l">l</span>
-                            <span class="letter" data-letter="t">t</span>
-                            <span class="letter" data-letter="u">u</span>
-                            <span class="letter" data-letter="r">r</span>
-                            <span class="letter" data-letter="e">e</span>
-                        </h1>
-                        <p class="subtitle-3d animate__animated animate__fadeInUp">
-                            Where Passion <span class="highlight-text">Meets</span> Purpose
-                        </p>
-                    </div>
-                    
-                    <div class="culture-stats-3d">
-                        <div class="stat-3d animate__animated animate__zoomIn" data-delay="0.1s">
-                            <div class="stat-icon">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <div class="stat-content">
-                                <h3 class="counter" data-target="500">0</h3>
-                                <p>Team Members</p>
-                            </div>
-                            <div class="stat-glow"></div>
-                        </div>
-                        
-                        <div class="stat-3d animate__animated animate__zoomIn" data-delay="0.3s">
-                            <div class="stat-icon">
-                                <i class="fas fa-globe-americas"></i>
-                            </div>
-                            <div class="stat-content">
-                                <h3 class="counter" data-target="45">0</h3>
-                                <p>Nationalities</p>
-                            </div>
-                            <div class="stat-glow"></div>
-                        </div>
-                        
-                        <div class="stat-3d animate__animated animate__zoomIn" data-delay="0.5s">
-                            <div class="stat-icon">
-                                <i class="fas fa-heart"></i>
-                            </div>
-                            <div class="stat-content">
-                                <h3 class="counter" data-target="98">0</h3>
-                                <span>%</span>
-                                <p>Employee Satisfaction</p>
-                            </div>
-                            <div class="stat-glow"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="hero-scroll-indicator">
-                        <div class="scroll-line"></div>
-                        <p>Discover Our World</p>
-                    </div>
-                </div>
-            </div>
+    <!-- Culture Hero Section -->
+    <section class="culture-hero">
+        <div class="hero-background-pattern">
+            <div class="pattern-circle" style="--delay: 0s;"></div>
+            <div class="pattern-circle" style="--delay: 0.3s;"></div>
+            <div class="pattern-circle" style="--delay: 0.6s;"></div>
+            <div class="pattern-hexagon" style="--delay: 0.9s;"></div>
+            <div class="pattern-hexagon" style="--delay: 1.2s;"></div>
         </div>
-    </section>
-
-    <!-- 3D Philosophy Cards Section -->
-    <section class="philosophy-3d-section" id="philosophy">
         <div class="container">
-            <div class="section-header-3d">
-                <h2 class="section-title-3d">Our <span class="gradient-text">Work Philosophy</span></h2>
-                <p class="section-subtitle">Building a culture of innovation, collaboration, and celebration</p>
-                <div class="title-accent-3d"></div>
-            </div>
-            
-            <div class="philosophy-cards-3d">
-                <div class="philosophy-card-3d card-1">
-                    <div class="card-front">
-                        <div class="card-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h3>Collaborative Spirit</h3>
-                        <p>Teamwork makes the dream work</p>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="title-word">Our</span>
+                        <span class="title-word">Culture</span>
+                    </h1>
+                    <p class="hero-subtitle">Where Passion Meets Purpose</p>
+                    <div class="hero-description">
+                        <p>At HyFun Foods, we believe that our greatest asset is our people and the culture we've built together. Our values shape everything we do, from farm to fork.</p>
                     </div>
-                    <div class="card-back">
-                        <h3>Together We Grow</h3>
-                        <p>At HyFun, collaboration isn't just encouraged—it's celebrated. We believe that diverse perspectives create innovative solutions.</p>
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> Cross-functional teams</li>
-                            <li><i class="fas fa-check-circle"></i> Open communication channels</li>
-                            <li><i class="fas fa-check-circle"></i> Shared success metrics</li>
-                        </ul>
-                    </div>
-                    <div class="card-glow"></div>
                 </div>
-                
-                <div class="philosophy-card-3d card-2">
-                    <div class="card-front">
-                        <div class="card-icon">
+                <div class="hero-visual">
+                    <div class="culture-values-preview">
+                        <div class="value-orb" data-value="integrity">
+                            <i class="fas fa-handshake"></i>
+                            <span>Integrity</span>
+                        </div>
+                        <div class="value-orb" data-value="innovation">
                             <i class="fas fa-lightbulb"></i>
+                            <span>Innovation</span>
                         </div>
-                        <h3>Innovation First</h3>
-                        <p>Ideas that transform</p>
-                    </div>
-                    <div class="card-back">
-                        <h3>Creative Freedom</h3>
-                        <p>We provide the canvas for your ideas. Every team member has the freedom to innovate and experiment.</p>
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> Innovation labs</li>
-                            <li><i class="fas fa-check-circle"></i> Hackathon events</li>
-                            <li><i class="fas fa-check-circle"></i> Patent incentives</li>
-                        </ul>
-                    </div>
-                    <div class="card-glow"></div>
-                </div>
-                
-                <div class="philosophy-card-3d card-3">
-                    <div class="card-front">
-                        <div class="card-icon">
+                        <div class="value-orb" data-value="excellence">
                             <i class="fas fa-trophy"></i>
+                            <span>Excellence</span>
                         </div>
-                        <h3>Recognition Culture</h3>
-                        <p>Celebrating every win</p>
+                        <div class="value-orb" data-value="teamwork">
+                            <i class="fas fa-users"></i>
+                            <span>Teamwork</span>
+                        </div>
                     </div>
-                    <div class="card-back">
-                        <h3>You Shine, We Celebrate</h3>
-                        <p>Big or small, every achievement matters. Our recognition programs ensure your hard work never goes unnoticed.</p>
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> Monthly awards</li>
-                            <li><i class="fas fa-check-circle"></i> Peer recognition</li>
-                            <li><i class="fas fa-check-circle"></i> Leadership spotlights</li>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="core-values">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Core Values</h2>
+                <p class="section-subtitle">The pillars that define who we are</p>
+                <div class="section-decoration">
+                    <div class="decoration-line"></div>
+                    <div class="decoration-dot"></div>
+                    <div class="decoration-line"></div>
+                </div>
+            </div>
+
+            <div class="values-grid">
+                <div class="value-card" data-value="integrity">
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon-bg"></div>
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3 class="card-title">Integrity First</h3>
+                    <p class="card-description">We operate with honesty, transparency, and ethical practices in everything we do. Our word is our bond.</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Ethical Practices</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="value-card" data-value="innovation">
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon-bg"></div>
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="card-title">Continuous Innovation</h3>
+                    <p class="card-description">We embrace change and constantly seek better ways to serve our customers and improve our processes.</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Patents</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="value-card" data-value="excellence">
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon-bg"></div>
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="card-title">Excellence in Execution</h3>
+                    <p class="card-description">We set high standards and strive for perfection in every detail, delivering premium quality consistently.</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">99.7%</span>
+                            <span class="stat-label">Quality Rate</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="value-card" data-value="teamwork">
+                    <div class="card-icon-wrapper">
+                        <div class="card-icon-bg"></div>
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="card-title">Collaborative Spirit</h3>
+                    <p class="card-description">We believe in the power of teamwork, where diverse perspectives come together to achieve common goals.</p>
+                    <div class="card-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Team Members</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultural Pillars Section -->
+    <section class="cultural-pillars">
+        <div class="pillar-background">
+            <div class="pillar-wave"></div>
+            <div class="pillar-wave" style="--delay: 0.5s;"></div>
+            <div class="pillar-wave" style="--delay: 1s;"></div>
+        </div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Cultural Pillars</h2>
+                <p class="section-subtitle">Building a thriving workplace</p>
+            </div>
+
+            <div class="pillars-container">
+                <div class="pillar-card">
+                    <div class="pillar-visual">
+                        <div class="visual-growth">
+                            <div class="growth-ring"></div>
+                            <div class="growth-ring" style="--delay: 0.3s;"></div>
+                            <div class="growth-ring" style="--delay: 0.6s;"></div>
+                            <div class="growth-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pillar-content">
+                        <h3>Growth & Development</h3>
+                        <p>We invest in our people through continuous learning opportunities, mentorship programs, and career advancement pathways.</p>
+                        <ul class="pillar-features">
+                            <li><i class="fas fa-check-circle"></i> Annual training hours: 40+</li>
+                            <li><i class="fas fa-check-circle"></i> Leadership programs</li>
+                            <li><i class="fas fa-check-circle"></i> Skill enhancement workshops</li>
                         </ul>
                     </div>
-                    <div class="card-glow"></div>
+                </div>
+
+                <div class="pillar-card reverse">
+                    <div class="pillar-content">
+                        <h3>Work-Life Harmony</h3>
+                        <p>We promote a balanced approach to work and personal life, offering flexible arrangements and wellness initiatives.</p>
+                        <ul class="pillar-features">
+                            <li><i class="fas fa-check-circle"></i> Flexible work hours</li>
+                            <li><i class="fas fa-check-circle"></i> Wellness programs</li>
+                            <li><i class="fas fa-check-circle"></i> Family support initiatives</li>
+                        </ul>
+                    </div>
+                    <div class="pillar-visual">
+                        <div class="visual-balance">
+                            <div class="balance-scale">
+                                <div class="scale-left"></div>
+                                <div class="scale-beam"></div>
+                                <div class="scale-right"></div>
+                            </div>
+                            <div class="balance-weights">
+                                <div class="weight work"></div>
+                                <div class="weight life"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pillar-card">
+                    <div class="pillar-visual">
+                        <div class="visual-inclusion">
+                            <div class="inclusion-circle">
+                                <div class="circle-piece" style="--index: 0;"></div>
+                                <div class="circle-piece" style="--index: 1;"></div>
+                                <div class="circle-piece" style="--index: 2;"></div>
+                                <div class="circle-piece" style="--index: 3;"></div>
+                                <div class="circle-center"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pillar-content">
+                        <h3>Inclusion & Diversity</h3>
+                        <p>We celebrate diversity and foster an inclusive environment where every voice is heard and valued.</p>
+                        <ul class="pillar-features">
+                            <li><i class="fas fa-check-circle"></i> Diverse workforce</li>
+                            <li><i class="fas fa-check-circle"></i> Equal opportunity</li>
+                            <li><i class="fas fa-check-circle"></i> Cultural celebrations</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Animated Culture Journey Timeline -->
-    <section class="culture-journey-3d" id="journey">
+    <!-- Team Environment Section -->
+    <section class="team-environment">
         <div class="container">
-            <div class="section-header-3d">
-                <h2 class="section-title-3d">Our <span class="gradient-text">Cultural Journey</span></h2>
-                <p class="section-subtitle">Milestones that shaped our vibrant culture</p>
+            <div class="section-header">
+                <h2 class="section-title">Our Team Environment</h2>
+                <p class="section-subtitle">Where great minds come together</p>
             </div>
-            
-            <div class="timeline-3d">
-                <div class="timeline-line"></div>
-                
-                <div class="timeline-item-3d left">
-                    <div class="timeline-content-3d">
-                        <div class="timeline-year">2020</div>
-                        <div class="timeline-card">
-                            <h3>Global Diversity Initiative</h3>
-                            <p>Launched programs to increase cultural diversity and inclusion across all locations</p>
-                            <div class="timeline-image">
-                                <img src="https://images.unsplash.com/photo-1556761175-4f46af09551c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Diversity">
-                            </div>
+
+            <div class="environment-stats">
+                <div class="stat-circle-graph">
+                    <div class="circle-graph">
+                        <div class="graph-segment" data-percent="95"></div>
+                        <div class="graph-segment" data-percent="90"></div>
+                        <div class="graph-segment" data-percent="88"></div>
+                        <div class="graph-center">
+                            <span class="graph-value">91%</span>
+                            <span class="graph-label">Satisfaction</span>
                         </div>
                     </div>
-                    <div class="timeline-dot"></div>
+                    <div class="graph-legend">
+                        <div class="legend-item">
+                            <span class="legend-color" style="background: var(--green);"></span>
+                            <span>Employee Satisfaction</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background: var(--blue);"></span>
+                            <span>Team Collaboration</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color" style="background: #ff9f43;"></span>
+                            <span>Growth Opportunities</span>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="timeline-item-3d right">
-                    <div class="timeline-content-3d">
-                        <div class="timeline-year">2021</div>
-                        <div class="timeline-card">
-                            <h3>Innovation Labs Launch</h3>
-                            <p>Esticated dedicated spaces for creativity and experimental projects</p>
-                            <div class="timeline-image">
-                                <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Innovation">
-                            </div>
+
+                <div class="environment-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Open Communication</h4>
+                            <p>Transparent dialogue across all levels with regular town halls and feedback sessions.</p>
                         </div>
                     </div>
-                    <div class="timeline-dot"></div>
-                </div>
-                
-                <div class="timeline-item-3d left">
-                    <div class="timeline-content-3d">
-                        <div class="timeline-year">2022</div>
-                        <div class="timeline-card">
-                            <h3>Wellness Program Expansion</h3>
-                            <p>Introduced comprehensive mental and physical wellness programs</p>
-                            <div class="timeline-image">
-                                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Wellness">
-                            </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Health & Wellness</h4>
+                            <p>Comprehensive healthcare, fitness programs, and mental health support for all employees.</p>
                         </div>
                     </div>
-                    <div class="timeline-dot"></div>
-                </div>
-                
-                <div class="timeline-item-3d right">
-                    <div class="timeline-content-3d">
-                        <div class="timeline-year">2023</div>
-                        <div class="timeline-card">
-                            <h3>Flexible Work Revolution</h3>
-                            <p>Implemented hybrid work models and flexible scheduling</p>
-                            <div class="timeline-image">
-                                <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Flex Work">
-                            </div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Recognition Programs</h4>
+                            <p>Regular acknowledgment of achievements through awards, bonuses, and public recognition.</p>
                         </div>
                     </div>
-                    <div class="timeline-dot"></div>
+
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Sustainability Champions</h4>
+                            <p>Employee-led initiatives to promote environmental responsibility and community engagement.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 3D Interactive Gallery -->
-    <section class="gallery-3d-section" id="gallery">
+    <!-- Culture in Action -->
+    <section class="culture-action">
+        <div class="action-background">
+            <div class="action-particle" style="--x: 10%; --y: 20%;"></div>
+            <div class="action-particle" style="--x: 30%; --y: 60%;"></div>
+            <div class="action-particle" style="--x: 50%; --y: 40%;"></div>
+            <div class="action-particle" style="--x: 70%; --y: 80%;"></div>
+            <div class="action-particle" style="--x: 90%; --y: 30%;"></div>
+        </div>
         <div class="container">
-            <div class="section-header-3d">
-                <h2 class="section-title-3d">Culture <span class="gradient-text">In Action</span></h2>
-                <p class="section-subtitle">Moments that define our vibrant workplace</p>
+            <div class="section-header">
+                <h2 class="section-title">Culture in Action</h2>
+                <p class="section-subtitle">Living our values every day</p>
             </div>
-            
-            <div class="gallery-3d-container">
-                <div class="gallery-3d-main">
-                    <div class="gallery-3d-item active" data-index="0">
-                        <div class="gallery-3d-image" style="background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80');">
-                            <div class="gallery-overlay-3d">
-                                <h3>Team Celebrations</h3>
-                                <p>Annual awards night celebrating achievements</p>
+
+            <div class="action-showcase">
+                <div class="showcase-item">
+                    <div class="showcase-visual">
+                        <div class="visual-community">
+                            <div class="community-hand"></div>
+                            <div class="community-heart"></div>
+                            <div class="community-people">
+                                <div class="person"></div>
+                                <div class="person"></div>
+                                <div class="person"></div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="gallery-3d-item" data-index="1">
-                        <div class="gallery-3d-image" style="background-image: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80');">
-                            <div class="gallery-overlay-3d">
-                                <h3>Learning Sessions</h3>
-                                <p>Regular training and development workshops</p>
+                    <div class="showcase-content">
+                        <h3>Community Engagement</h3>
+                        <p>Our team actively participates in community service, food donation drives, and educational programs to give back to society.</p>
+                        <div class="showcase-stats">
+                            <div class="showcase-stat">
+                                <span class="stat-number">1000+</span>
+                                <span class="stat-label">Volunteer Hours</span>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <div class="gallery-3d-item" data-index="2">
-                        <div class="gallery-3d-image" style="background-image: url('https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80');">
-                            <div class="gallery-overlay-3d">
-                                <h3>Community Events</h3>
-                                <p>Giving back to the community together</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="gallery-3d-item" data-index="3">
-                        <div class="gallery-3d-image" style="background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80');">
-                            <div class="gallery-overlay-3d">
-                                <h3>Festival Celebrations</h3>
-                                <p>Embracing diversity through cultural festivities</p>
+                            <div class="showcase-stat">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Communities Served</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="gallery-3d-nav">
-                    <button class="gallery-nav-btn prev-btn">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <div class="gallery-thumbnails">
-                        <div class="thumbnail active" data-index="0">
-                            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Team">
-                        </div>
-                        <div class="thumbnail" data-index="1">
-                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Learning">
-                        </div>
-                        <div class="thumbnail" data-index="2">
-                            <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Community">
-                        </div>
-                        <div class="thumbnail" data-index="3">
-                            <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Festival">
+
+                <div class="showcase-item reverse">
+                    <div class="showcase-content">
+                        <h3>Innovation Labs</h3>
+                        <p>We encourage creative thinking through innovation labs where employees can experiment with new ideas and solutions.</p>
+                        <div class="showcase-stats">
+                            <div class="showcase-stat">
+                                <span class="stat-number">200+</span>
+                                <span class="stat-label">Ideas Implemented</span>
+                            </div>
+                            <div class="showcase-stat">
+                                <span class="stat-number">15%</span>
+                                <span class="stat-label">Revenue from Innovation</span>
+                            </div>
                         </div>
                     </div>
-                    <button class="gallery-nav-btn next-btn">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
+                    <div class="showcase-visual">
+                        <div class="visual-innovation">
+                            <div class="innovation-gear gear-1"></div>
+                            <div class="innovation-gear gear-2"></div>
+                            <div class="innovation-gear gear-3"></div>
+                            <div class="innovation-spark"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Interactive Work With Us Section -->
-    <section class="work-with-us-3d" id="careers">
+    <!-- Join Our Culture CTA -->
+    <section class="join-culture">
         <div class="container">
-            <div class="careers-container-3d">
-                <div class="careers-header-3d">
-                    <h2>Join Our <span class="gradient-text">Family</span></h2>
-                    <p>Be part of something extraordinary</p>
+            <div class="join-content">
+                <div class="join-icon">
+                    <i class="fas fa-users"></i>
                 </div>
+                <h2>Join Our Growing Family</h2>
+                <p class="join-description">Be part of a culture that values your growth, celebrates your achievements, and works together to create delicious moments for families worldwide.</p>
                 
-                <div class="careers-content-3d">
-                    <div class="careers-intro-3d">
-                        <div class="intro-card">
-                            <h3><i class="fas fa-star"></i> Why Choose HyFun?</h3>
-                            <p>We're not just building a company - we're building a community of passionate food enthusiasts who believe in making a difference.</p>
-                        </div>
+                <div class="culture-benefits">
+                    <div class="benefit">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span>Learning Culture</span>
                     </div>
-                    
-                    <div class="careers-form-3d">
-                        <div class="form-header">
-                            <h3><i class="fas fa-paper-plane"></i> Ready to Begin Your Journey?</h3>
-                            <p>Submit your application and our team will reach out</p>
-                        </div>
-                        
-                        <form id="careersForm3d" class="careers-form-3d-content">
-                            <div class="form-row">
-                                <div class="form-group-3d">
-                                    <div class="input-container">
-                                        <i class="fas fa-user"></i>
-                                        <input type="text" id="fullName3d" name="fullName" required placeholder="Your full name *">
-                                        <div class="input-border"></div>
-                                    </div>
-                                </div>
-                                
-                                <div class="form-group-3d">
-                                    <div class="input-container">
-                                        <i class="fas fa-envelope"></i>
-                                        <input type="email" id="email3d" name="email" required placeholder="Your email address *">
-                                        <div class="input-border"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group-3d">
-                                <div class="input-container select-container">
-                                    <i class="fas fa-briefcase"></i>
-                                    <select id="department3d" name="department" required>
-                                        <option value="" disabled selected>Select your department *</option>
-                                        <option value="production">Production & Manufacturing</option>
-                                        <option value="quality">Quality Assurance</option>
-                                        <option value="rd">Research & Development</option>
-                                        <option value="sales">Sales & Marketing</option>
-                                        <option value="supply">Supply Chain</option>
-                                        <option value="finance">Finance & Accounts</option>
-                                        <option value="hr">Human Resources</option>
-                                        <option value="it">Information Technology</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                    <div class="input-border"></div>
-                                    <i class="fas fa-chevron-down select-arrow"></i>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group-3d">
-                                <div class="file-upload-3d" id="fileUpload3d">
-                                    <div class="upload-area">
-                                        <i class="fas fa-cloud-upload-alt"></i>
-                                        <p class="upload-text">Click or drag your CV here</p>
-                                        <p class="upload-hint">PDF, DOC, DOCX (Max 5MB)</p>
-                                        <input type="file" id="cvUpload3d" name="cvUpload" accept=".pdf,.doc,.docx" required>
-                                    </div>
-                                    <div class="file-preview" id="filePreview"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="form-group-3d">
-                                <div class="input-container textarea-container">
-                                    <i class="fas fa-comment"></i>
-                                    <textarea id="message3d" name="message" rows="4" placeholder="Tell us why you want to join HyFun Foods..."></textarea>
-                                    <div class="input-border"></div>
-                                </div>
-                            </div>
-                            
-                            <div class="form-submit-3d">
-                                <button type="submit" class="btn-3d">
-                                    <span class="btn-text">Submit Application</span>
-                                    <span class="btn-icon">
-                                        <i class="fas fa-rocket"></i>
-                                    </span>
-                                    <div class="btn-glow"></div>
-                                </button>
-                            </div>
-                        </form>
+                    <div class="benefit">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>Wellness Focus</span>
                     </div>
-                    
-                    <div class="benefits-showcase-3d">
-                        <h3><i class="fas fa-gift"></i> Perks & Benefits</h3>
-                        <div class="benefits-grid-3d">
-                            <div class="benefit-3d">
-                                <div class="benefit-icon-3d">
-                                    <i class="fas fa-dumbbell"></i>
-                                </div>
-                                <h4>Health & Wellness</h4>
-                                <p>Comprehensive health programs</p>
-                            </div>
-                            
-                            <div class="benefit-3d">
-                                <div class="benefit-icon-3d">
-                                    <i class="fas fa-graduation-cap"></i>
-                                </div>
-                                <h4>Learning Stipend</h4>
-                                <p>$5,000 annual learning budget</p>
-                            </div>
-                            
-                            <div class="benefit-3d">
-                                <div class="benefit-icon-3d">
-                                    <i class="fas fa-home"></i>
-                                </div>
-                                <h4>Flexible Work</h4>
-                                <p>Hybrid & remote options</p>
-                            </div>
-                            
-                            <div class="benefit-3d">
-                                <div class="benefit-icon-3d">
-                                    <i class="fas fa-utensils"></i>
-                                </div>
-                                <h4>Food Credit</h4>
-                                <p>Monthly food allowance</p>
-                            </div>
-                        </div>
+                    <div class="benefit">
+                        <i class="fas fa-handshake"></i>
+                        <span>Strong Ethics</span>
                     </div>
+                    <div class="benefit">
+                        <i class="fas fa-rocket"></i>
+                        <span>Growth Opportunities</span>
+                    </div>
+                </div>
+
+                <div class="join-buttons">
+                    <a href="#careers" class="btn btn-primary">
+                        <i class="fas fa-briefcase"></i>
+                        <span>View Careers</span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact HR</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -554,10 +513,11 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <li><a href="culture.html" class="active">Our Culture</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="#careers">Careers</a></li>
-                        <li><a href="#connect">Connect With Us</a></li>
+                        <li><a href="culture.html">Our Culture</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="seedtoshelf.html">Seed to Shelf</a></li>
+                        <li><a href="Exports.html">Exports</a></li>
+                        <li><a href="Recipes.html">Recipes</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
@@ -565,49 +525,30 @@
                     <div class="contact-info">
                         <p><i class="fas fa-building"></i> <strong>Corporate Office:</strong> HyFun Foods HQ</p>
                         <p><i class="fas fa-industry"></i> <strong>Production Unit:</strong> State-of-the-art facilities</p>
-                        <p><i class="fas fa-chart-line"></i> <strong>Sales & Marketing:</strong> Global reach</p>
-                        <p><i class="fas fa-envelope"></i> hr@hyfunfoods.com</p>
-                        <p><i class="fas fa-envelope"></i> careers@hyfunfoods.com</p>
+                        <p><i class="fas fa-chart-line"></i> <strong>HR Department:</strong> careers@hyfunfoods.com</p>
+                        <p><i class="fas fa-envelope"></i> sales@hyfunfoods.com</p>
                         <p><i class="fas fa-envelope"></i> info@hyfunfoods.com</p>
                     </div>
                 </div>
                 <div class="footer-column">
-                    <h3>Quick Access</h3>
+                    <h3>Legal</h3>
                     <ul>
-                        <li><a href="#philosophy">Our Philosophy</a></li>
-                        <li><a href="#journey">Cultural Journey</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#careers">Apply Now</a></li>
-                        <li><a href="#faq">FAQs</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#cookies">Cookie Policy</a></li>
+                        <li><a href="#sitemap">Sitemap</a></li>
+                        <li><a href="#careers">Careers</a></li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 HyFun Foods. All rights reserved. | Potatoes for the World | Made with <i
-                        class="fas fa-heart" style="color: #ff4757;"></i></p>
+                <p>&copy; 2023 HyFun Foods. All rights reserved. | Building a Culture of Excellence | Made with <i class="fas fa-heart" style="color: #ff4757;"></i></p>
             </div>
         </div>
     </footer>
 
-    <!-- Success Modal -->
-    <div class="success-modal" id="successModal">
-        <div class="modal-content-3d">
-            <div class="modal-icon">
-                <i class="fas fa-check-circle"></i>
-            </div>
-            <h3>Application Submitted!</h3>
-            <p>Thank you for your interest in joining HyFun Foods. Our HR team will review your application and contact you shortly.</p>
-            <button class="modal-close-btn" id="modalCloseBtn">Awesome!</button>
-        </div>
-    </div>
-
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/mobile-menu.js"></script>
     <script src="./assets/js/culture.js"></script>
 </body>
-
 </html>

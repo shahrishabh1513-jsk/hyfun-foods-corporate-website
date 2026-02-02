@@ -1,6 +1,4 @@
-/* ============================================
-   EXPORTS PAGE JAVASCRIPT
-   ============================================ */
+/* EXPORTS PAGE JAVASCRIPT */
 
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all exports page functionality

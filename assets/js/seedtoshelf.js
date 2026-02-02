@@ -1,6 +1,4 @@
-/* ============================================
-   SEED TO SHELF - INTERACTIVE ELEMENTS
-   ============================================ */
+/* SEED TO SHELF - INTERACTIVE ELEMENTS */
 
 document.addEventListener('DOMContentLoaded', function() {
     initSeedAnimations();

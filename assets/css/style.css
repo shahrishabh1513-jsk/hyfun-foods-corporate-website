@@ -659,17 +659,6 @@ section {
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
 }
 
-.hero-timeline-line {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 120%;
-    height: 3px;
-    background: linear-gradient(90deg, transparent, white, transparent);
-    transform: translate(-50%, -50%);
-    z-index: 1;
-}
-
 .timeline-point {
     position: absolute;
     z-index: 2;
